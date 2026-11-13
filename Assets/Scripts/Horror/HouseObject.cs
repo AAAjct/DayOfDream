@@ -106,10 +106,11 @@ namespace DayOfDream.Horror
                 speaker.playOnAwake = false; speaker.spatialBlend = 1; speaker.maxDistance = 22;
                 impactSound = Resources.Load<AudioClip>(kind == Kind.Bottle ? "GameplayAudio/BottleBreak" : "GameplayAudio/ItemImpact");
             }
+            foreach (var c in colliders) c.isTrigger = false;
+            gameObject.SetActive(true);
             var controller = player.GetComponent<CharacterController>();
             foreach (var c in colliders)
-            { c.isTrigger = false; Physics.IgnoreCollision(c, controller); }
-            gameObject.SetActive(true);
+                if (c.enabled && c.gameObject.activeInHierarchy) Physics.IgnoreCollision(c, controller);
             body.isKinematic = false;
             body.linearVelocity = velocity;
             body.angularVelocity = new Vector3(3, 6, 2);
@@ -136,14 +137,6 @@ namespace DayOfDream.Horror
             nextImpact = Time.time + .2f;
             if (impactSound != null) speaker.PlayOneShot(impactSound, Mathf.Clamp01(collision.relativeVelocity.magnitude / 4));
             house.Hear(transform.position, kind == Kind.Bottle ? 18 : 8);
-            // Keep objective items recoverable; bottles disappear after the breaking sound.
-            if (kind == Kind.Bottle)
-            {
-                airborne = false; body.isKinematic = true;
-                foreach (var c in colliders) c.enabled = false;
-                foreach (var r in GetComponentsInChildren<Renderer>()) r.enabled = false;
-                Destroy(gameObject, impactSound != null ? impactSound.length + .1f : .5f);
-            }
         }
 
         internal void PlaceOnSurface(Vector3 point)

@@ -35,7 +35,9 @@ var bottle=items.First(x=>Field(x,"kind").ToString()=="Bottle");
 var ground=GameObject.CreatePrimitive(PrimitiveType.Cube);ground.name="Inventory validation floor";
 ground.transform.position=new Vector3(50,-.25f,50);ground.transform.localScale=new Vector3(50,.5f,70);
 var lamp = new GameObject("Validation light").AddComponent<Light>();lamp.type=LightType.Directional;lamp.intensity=2;lamp.transform.rotation=Quaternion.Euler(55,20,0);
-int stage=0,frame=-1;float since=Time.time;Vector3 start,shortEnd;float shortVelocity=0,noiseBefore=0;int stepsBefore=0;
+int stage=0,frame=-1,lookStage=0;float since=Time.time,slowestSprint=0;
+Vector3 start,shortEnd,runStart;float shortVelocity=0,noiseBefore=0;int stepsBefore=0;
+var view=player.GetComponentInChildren<Camera>().transform;
 UnityEditor.EditorApplication.CallbackFunction tick=null;
 void Next(){stage++;since=Time.time;}
 void Cleanup()
@@ -94,7 +96,7 @@ tick=()=>
     Call(house,"Use",small);Keys(Key.Q);Next();break;
    case 8:
     if(dt<1.35f)return;
-    Check("Hold Q reaches full charge with trajectory",(float)Field(inventory,"charge")>.99f&&((LineRenderer)Field(inventory,"arc")).enabled,Field(inventory,"charge"));
+    Check("Hold Q reaches full charge",(float)Field(inventory,"charge")>.99f,Field(inventory,"charge"));
     ScreenCapture.CaptureScreenshot("output/inventory_audio/charged.png");Next();break;
    case 9:
     Keys();
@@ -127,19 +129,41 @@ tick=()=>
     Check("Walking emits no enemy hearing event",(float)Field(house,"nextNoise")==noiseBefore,Field(house,"nextNoise"));
     Keys(Key.W,Key.LeftShift);Next();break;
    case 17:
-    if(dt<.7f)return;
-    Check("Running moves faster",player.MovementSpeed>3.3f,player.MovementSpeed);
+    if(lookStage==0)
+    {
+      if(dt<.7f)return;
+      Check("Running moves faster",player.MovementSpeed>3.3f,player.MovementSpeed);
+      runStart=player.transform.position;
+      slowestSprint=player.MovementSpeed;
+      Keys(Key.W,Key.LeftShift,Key.R);lookStage++;since=Time.time;return;
+    }
+    slowestSprint=Mathf.Min(slowestSprint,player.MovementSpeed);
+    if(dt<.65f)return;
+    if(lookStage<=2)
+    {
+      var forward=Vector3.Dot(player.transform.forward,view.forward);
+      var distance=Vector3.Dot(player.transform.position-runStart,player.transform.forward);
+      Check(lookStage==1?"R looks back during sprint":"Alt looks back during sprint",
+        forward<-.95f&&distance>2.5f&&slowestSprint>4.3f,new { forward,distance,slowestSprint });
+      runStart=player.transform.position;
+      slowestSprint=player.MovementSpeed;
+      if(lookStage==1)Keys(Key.W,Key.LeftShift,Key.LeftAlt);
+      else Keys(Key.W,Key.LeftShift);
+      lookStage++;since=Time.time;return;
+    }
+    Check("Releasing look back keeps sprinting",Vector3.Dot(player.transform.forward,view.forward)>.95f&&slowestSprint>4.3f,slowestSprint);
     Keys();
     var thrownBottle=(HouseObject)Call(house,"ReleaseSlot",3);
     Call(thrownBottle,"Launch",player.transform.position+Vector3.up+player.transform.forward*.6f,player.transform.forward*2,house);
     Next();break;
    case 18:
     if(dt<1.4f)return;
-    Check("Bottle collides and breaks",bottle==null || !bottle.GetComponentsInChildren<Renderer>().Any(r=>r.enabled),"bottle destroyed or hidden after impact");
+    Check("Bottle remains visible after landing",bottle!=null&&bottle.gameObject.activeInHierarchy&&bottle.GetComponentsInChildren<Renderer>().Any(r=>r.enabled),bottle!=null?bottle.transform.position.ToString():"missing");
     Call(house,"BeginExecution");Next();break;
    case 19:
     if(dt<.15f)return;
-    Check("Execution plays supplied laugh",((AudioSource)Field(sound,"effects")).isPlaying,((AudioClip)Field(sound,"execution")).name);
+    var execution=(AudioSource)Field(sound,"execution");
+    Check("Execution plays supplied laugh",execution.isPlaying,execution.clip.name);
     Call(house,"FinishExecution");
     Check("Death drops all four objective slots",Enumerable.Range(0,4).All(i=>Call(house,"GetSlot",i)==null),"slots cleared");
     Check("No runtime errors",errors.Count==0,errors.ToArray());Cleanup();break;

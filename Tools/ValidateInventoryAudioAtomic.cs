@@ -34,7 +34,8 @@ try
  Check("Player hears running footsteps",(int)Get(audio,"<FootstepsPlayed>k__BackingField")>before,Get(audio,"<FootstepsPlayed>k__BackingField"));
  Set(p,"<MovementSpeed>k__BackingField",2.4f);Set(house,"nextNoise",0f);Call(house,"Update");
  Check("Walking generates no enemy hearing event",(float)Get(house,"nextNoise")==0,Get(house,"nextNoise"));
- Check("Supplied execution clip loaded",((AudioClip)Get(audio,"execution")).name=="ExecutionLaugh",((AudioClip)Get(audio,"execution")).length);
+ var execution=(AudioSource)Get(audio,"execution");
+ Check("Supplied execution clip loaded",execution.clip!=null&&execution.clip.name=="ExecutionLaugh",execution.clip?.length);
  Physics.simulationMode=SimulationMode.Script;
  Call(house,"Use",key);Call(inv,"Tick",true);
  var grip=(Transform)Get(inv,"grip");
@@ -46,7 +47,7 @@ try
  float shortZ=key.transform.position.z;
  Check("Dropped key collides with floor",key.transform.position.y>-.1f&&key.transform.position.y<.4f,key.transform.position.ToString());
  Call(house,"Use",key);
- Check("Dropped key can be collected again",Call(house,"GetSlot",0)==key,"slot 1 restored");
+ Check("Dropped key can be collected again",(HouseObject)Call(house,"GetSlot",0)==key,"slot 1 restored");
  Call(house,"ReleaseSlot",0);Call(key,"Launch",new Vector3(50,1.5f,30),new Vector3(0,4,13),house);
  Set(key,"nextImpact",0f);Physics.SyncTransforms();
  for(int i=0;i<125;i++)Physics.Simulate(.02f);
@@ -54,9 +55,12 @@ try
  Call(bottle,"Launch",new Vector3(50,1.5f,30),new Vector3(0,1,3),house);
  Set(bottle,"nextImpact",0f);Physics.SyncTransforms();
  for(int i=0;i<100;i++)Physics.Simulate(.02f);
- Check("Bottle breaks on collision",!bottle.GetComponentsInChildren<Renderer>().Any(r=>r.enabled),"hidden after physical impact");
+ Check("Bottle remains visible on the floor",bottle.gameObject.activeInHierarchy&&bottle.GetComponentsInChildren<Renderer>().Any(r=>r.enabled)
+     &&bottle.transform.position.y>0&&bottle.transform.position.y<.3f,bottle.transform.position.ToString());
+ Call(house,"Use",bottle);
+ Check("Dropped bottle can be collected again",(HouseObject)Call(house,"GetSlot",3)==bottle,"slot 4 restored");
  Call(audio,"Execute");
- Check("Execution sound plays",((AudioSource)Get(audio,"effects")).isPlaying,"audio source playing");
+ Check("Execution sound plays",execution.isPlaying,"audio source playing");
 }
 finally
 {
