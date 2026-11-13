@@ -1,0 +1,139 @@
+[
+  {
+    "name": "Player loop advances",
+    "passed": true,
+    "detail": 180
+  },
+  {
+    "name": "Door lamp visibly flickers",
+    "passed": true,
+    "detail": {
+      "minLamp": 0.48,
+      "maxLamp": 5.96192169
+    }
+  },
+  {
+    "name": "Settings opens",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Settings apply",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Settings closes",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Start loads house",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Bedroom practical is brighter",
+    "passed": true,
+    "detail": [
+      {
+        "name": "Bedroom ceiling lamp",
+        "enabled": true,
+        "intensity": 1.12
+      },
+      {
+        "name": "Tuned practical lamp",
+        "enabled": false,
+        "intensity": 1.05
+      },
+      {
+        "name": "Bedroom window spill",
+        "enabled": false,
+        "intensity": 2.2
+      }
+    ]
+  },
+  {
+    "name": "Quilt exists",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Empty slots have no text",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "All item image assets load",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Battery pickups removed",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "DV infrared remains active after four minutes",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Pickup uses unlit UI image",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Battery readouts removed",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Q shows no trajectory",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Q drops selected objective",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Q preserves DV",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Permanent equipment survives death",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Checkpoint saved",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Continue restores position",
+    "passed": true,
+    "detail": {
+      "saved": "(-4.58, 0.02, 5.10)",
+      "restored": "(-4.58, 0.02, 5.10)"
+    }
+  },
+  {
+    "name": "Continue restores key and equipment",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "Continue skips opening wake",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "No runtime errors",
+    "passed": true,
+    "detail": []
+  }
+]

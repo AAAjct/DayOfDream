@@ -1,0 +1,18 @@
+{
+  "No flashlight": true,
+  "DV model visible during lift": true,
+  "Full viewfinder hides model": true,
+  "IR lamp turns on": true,
+  "DV model returns during lowering": true,
+  "Stowed DV clears finder and model": true,
+  "All patrol points reachable": true,
+  "Exit rejects incomplete objectives": true,
+  "Wardrobe hides player": true,
+  "Wardrobe can be exited": true,
+  "Nearby sound triggers investigation": true,
+  "Capture spends a night and preserves found keys": true,
+  "Wake-up restores control": true,
+  "Cabinet reveals exit key": true,
+  "Breaker powers exit": true,
+  "Both objectives unlock escape": true
+}

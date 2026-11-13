@@ -1,0 +1,97 @@
+{
+  "passes": 18,
+  "total": 18,
+  "errors": [],
+  "checks": [
+    {
+      "name": "Player loop advances",
+      "passed": true,
+      "detail": 13
+    },
+    {
+      "name": "DV stowed at spawn",
+      "passed": true,
+      "detail": 1.0
+    },
+    {
+      "name": "Right mouse raises DV and stows flashlight",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "Color view does not drain battery",
+      "passed": true,
+      "detail": 1.0
+    },
+    {
+      "name": "N enables IR and consumes power",
+      "passed": true,
+      "detail": 0.996805966
+    },
+    {
+      "name": "Scroll zooms the eye camera",
+      "passed": true,
+      "detail": 59.1594734
+    },
+    {
+      "name": "Escape pauses",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "Pause freezes battery drain",
+      "passed": true,
+      "detail": 0.9936749
+    },
+    {
+      "name": "Depleted battery disables IR",
+      "passed": true,
+      "detail": 2
+    },
+    {
+      "name": "R starts the timed swap",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "Swap consumes one spare and restores IR",
+      "passed": true,
+      "detail": 0.99782294
+    },
+    {
+      "name": "Lowering restores FOV, HUD and prior flashlight state",
+      "passed": true,
+      "detail": 72.0
+    },
+    {
+      "name": "Gamepad shoulder raises DV",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "Gamepad stick click toggles IR",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "F switches directly to the flashlight",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "Gate battery can be targeted",
+      "passed": true,
+      "detail": "Gate battery"
+    },
+    {
+      "name": "E picks up a scene battery once",
+      "passed": true,
+      "detail": 2
+    },
+    {
+      "name": "No runtime errors",
+      "passed": true,
+      "detail": 0
+    }
+  ]
+}

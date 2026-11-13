@@ -1,0 +1,138 @@
+{
+  "results": [
+    {
+      "name": "First morning starts lying on bed",
+      "passed": true,
+      "detail": "(-5.70, 0.77, 5.92)"
+    },
+    {
+      "name": "Eyelid mesh renders",
+      "passed": true,
+      "detail": "Eyelids (UnityEngine.CanvasRenderer)"
+    },
+    {
+      "name": "Wake ends standing with control",
+      "passed": true,
+      "detail": {
+        "eye": "(-4.53, 1.64, 5.10)",
+        "frames": 598
+      }
+    },
+    {
+      "name": "Bed length increased",
+      "passed": true,
+      "detail": "(1.48, 0.66, 2.74)"
+    },
+    {
+      "name": "Four larger square slots",
+      "passed": true,
+      "detail": [
+        "(104.00, 104.00)",
+        "(104.00, 104.00)",
+        "(104.00, 104.00)",
+        "(104.00, 104.00)"
+      ]
+    },
+    {
+      "name": "Bedroom door initially closed",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "No aiming hint text",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Pickup uses same deluxe model",
+      "passed": true,
+      "detail": 7
+    },
+    {
+      "name": "DV picked up with E",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "DV occupies no inventory slot",
+      "passed": true,
+      "detail": [
+        {
+          "sprite": "CabinetKey_0",
+          "enabled": false
+        },
+        {
+          "sprite": "ExitKey_0",
+          "enabled": false
+        },
+        {
+          "sprite": "Fuse_0",
+          "enabled": false
+        },
+        {
+          "sprite": "Bottle_0",
+          "enabled": false
+        }
+      ]
+    },
+    {
+      "name": "Night vision still works",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "Bedroom door opens with E",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "Anon never enters bedroom during patrol",
+      "passed": true,
+      "detail": {
+        "patrolEntered": false,
+        "position": "(5.06, 0.05, 0.80)",
+        "seconds": 3.00708
+      }
+    },
+    {
+      "name": "Victim is on floor",
+      "passed": true,
+      "detail": "(-0.67, 0.33, -3.43)"
+    },
+    {
+      "name": "Club raised above victim",
+      "passed": true,
+      "detail": "(0.48, 1.92, -3.40)"
+    },
+    {
+      "name": "Impact closes eyes",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "Second day begins on same bed",
+      "passed": true,
+      "detail": {
+        "day": 2,
+        "eye": "(-5.70, 0.77, 5.92)"
+      }
+    },
+    {
+      "name": "Second morning restores standing controls",
+      "passed": true,
+      "detail": "(-4.53, 1.64, 5.10)"
+    },
+    {
+      "name": "DV remains separate carried equipment",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "No runtime errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "duration": 24.688797
+}

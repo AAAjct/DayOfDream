@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Left Alt turns camera back",
+    "pass": true,
+    "detail": {
+      "dot": -0.9999997,
+      "Pressed": true,
+      "Raw": false
+    }
+  },
+  {
+    "name": "Release Alt turns camera forward",
+    "pass": true,
+    "detail": 0.999999046
+  },
+  {
+    "name": "Lowered LCD uses actual lens texture",
+    "pass": true,
+    "detail": "DV Live Feed"
+  },
+  {
+    "name": "Raised view uses same optical feed",
+    "pass": true,
+    "detail": "DV Live Feed"
+  },
+  {
+    "name": "IR active in lens; emitter off outside lens",
+    "pass": true,
+    "detail": 0.9930002
+  },
+  {
+    "name": "Lowering restores body and hides full-screen feed",
+    "pass": true,
+    "detail": "(0.24, -0.19, 0.39)"
+  }
+]

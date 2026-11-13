@@ -1,0 +1,44 @@
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.LowLevel;
+using System;
+using System.Linq;
+using System.Reflection;
+using DayOfDream.Horror;
+var p=UnityEngine.Object.FindAnyObjectByType<FirstPersonExplorer>();
+const BindingFlags f=BindingFlags.Instance|BindingFlags.NonPublic;
+var view=(Transform)p.GetType().GetField("view",f).GetValue(p);
+var dv=view.GetComponent<HandheldCamcorder>();
+var house=UnityEngine.Object.FindAnyObjectByType<AnonHouse>();
+house.GetType().GetField("grace",f).SetValue(house,1000f);house.GetType().GetField("nextSave",f).SetValue(house,float.PositiveInfinity);
+UnityEngine.Object.FindAnyObjectByType<AnonHunter>().enabled=false;
+p.GetType().GetMethod("Warp",f).Invoke(p,new object[]{new Vector3(-4.58f,.04f,5.10f),Quaternion.identity,null});
+p.SetPaused(false);
+dv.GetType().GetMethod("ReturnToTable",f).Invoke(dv,null);
+var pick=(CamcorderPickup)dv.GetType().GetField("pickup",f).GetValue(dv);
+Vector3 delta=pick.transform.position+Vector3.up*.015f-view.position;
+float yaw=Mathf.Atan2(delta.x,delta.z)*Mathf.Rad2Deg;
+float pitch=-Mathf.Atan2(delta.y,new Vector2(delta.x,delta.z).magnitude)*Mathf.Rad2Deg;
+p.transform.rotation=Quaternion.Euler(0,yaw,0);p.GetType().GetField("pitch",f).SetValue(p,pitch);view.localRotation=Quaternion.Euler(pitch,0,0);
+var action=(InputAction)p.GetType().GetField("interact",f).GetValue(p);
+var records=new System.Collections.Generic.List<object>();
+void Hit(string name)
+{
+ Physics.Raycast(view.position,view.forward,out var h,2.5f,~(1<<2),QueryTriggerInteraction.Collide);
+ records.Add(new{name,target=h.collider==null?"none":h.collider.name,cp=h.collider==null?false:h.collider.GetComponentInParent<CamcorderPickup>()!=null,paused=p.IsPaused,blocked=house.BlocksMovement,pressed=action.WasPressedThisFrame(),view=view.forward.ToString(),carried=dv.IsCarried});
+}
+Action<InputAction.CallbackContext> performed=ctx=>Hit("performed");
+action.performed+=performed;
+InputSystem.settings.editorInputBehaviorInPlayMode=InputSettings.EditorInputBehaviorInPlayMode.AllDeviceInputAlwaysGoesToGameView;
+InputSystem.settings.backgroundBehavior=InputSettings.BackgroundBehavior.IgnoreFocus;
+var pad=InputSystem.AddDevice<Keyboard>();KeyboardState state=new KeyboardState();
+Action inject=()=>{if(InputState.currentUpdateType==InputUpdateType.Dynamic)InputSystem.QueueStateEvent(pad,state);};InputSystem.onBeforeUpdate+=inject;
+Hit("before");
+await System.Threading.Tasks.Task.Delay(250);
+state=new KeyboardState(Key.E);
+await System.Threading.Tasks.Task.Delay(500);
+state=new KeyboardState();
+await System.Threading.Tasks.Task.Delay(200);
+Hit("after");
+InputSystem.onBeforeUpdate-=inject;action.performed-=performed;InputSystem.RemoveDevice(pad);
+return records;

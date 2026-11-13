@@ -1,0 +1,30 @@
+{
+  "frameTarget": 60,
+  "vsync": 0,
+  "plaqueFacesCorridor": true,
+  "stairPlatforms": [
+    {
+      "name": "Stair arrival landing",
+      "y": 3.2
+    },
+    {
+      "name": "Stair arrival landing",
+      "y": 6.5
+    },
+    {
+      "name": "Stair tower ground",
+      "y": -0.1
+    }
+  ],
+  "cameraRendersOnlyDVWorld": true,
+  "IRActive": true,
+  "antialiasing": "FastApproximateAntialiasing",
+  "drawCallsOptimized": 1160.3529411764705,
+  "drawCallsDoubleRender": 23211.10606060606,
+  "gpuMsOptimized": 0.63196988235294116,
+  "gpuMsDoubleRender": 8.0145105454545469,
+  "executionTriggeredByHunter": true,
+  "laughPlayingDuringExecution": true,
+  "laughStoppedAtAnimationEnd": true,
+  "dayAfterExecution": 2
+}

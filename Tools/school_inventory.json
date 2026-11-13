@@ -1,0 +1,1462 @@
+{
+  "scene": "HAOJIE | Midnight School",
+  "objects": [
+    {
+      "name": "SITE | foundation, lawns and paths.001",
+      "type": "MESH",
+      "vertices": 2064,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        132.0,
+        134.0,
+        1.2599999904632568
+      ],
+      "collections": [
+        "01_Ground_and_routes.001"
+      ]
+    },
+    {
+      "name": "ACADEMIC A | sixteen bays / three storeys.001",
+      "type": "MESH",
+      "vertices": 12828,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        68.19999694824219,
+        12.700000762939453,
+        13.850000381469727
+      ],
+      "collections": [
+        "02_Main_teaching_block.001"
+      ]
+    },
+    {
+      "name": "ACADEMIC C | east return.001",
+      "type": "MESH",
+      "vertices": 6468,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        12.69999885559082,
+        34.599998474121094,
+        13.850000381469727
+      ],
+      "collections": [
+        "03_East_wing.001"
+      ]
+    },
+    {
+      "name": "ACADEMIC B | west return.001",
+      "type": "MESH",
+      "vertices": 6674,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        12.69999885559082,
+        34.599998474121094,
+        13.850000381469727
+      ],
+      "collections": [
+        "04_West_wing.001"
+      ]
+    },
+    {
+      "name": "ENTRANCE | clock tower and portico.001",
+      "type": "MESH",
+      "vertices": 824,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        12.800000190734863,
+        10.799999237060547,
+        21.799999237060547
+      ],
+      "collections": [
+        "05_Clock_tower_and_entrance.001"
+      ]
+    },
+    {
+      "name": "School name / Chinese.001",
+      "type": "FONT",
+      "vertices": 0,
+      "position": [
+        0.0,
+        14.720000267028809,
+        10.949999809265137
+      ],
+      "dimensions": [
+        5.831358909606934,
+        1.106523036956787,
+        0.09399999678134918
+      ],
+      "collections": [
+        "05_Clock_tower_and_entrance.001"
+      ]
+    },
+    {
+      "name": "School name / English.001",
+      "type": "FONT",
+      "vertices": 0,
+      "position": [
+        0.0,
+        14.6899995803833,
+        9.75
+      ],
+      "dimensions": [
+        3.903440475463867,
+        0.29672205448150635,
+        0.014000000432133675
+      ],
+      "collections": [
+        "05_Clock_tower_and_entrance.001"
+      ]
+    },
+    {
+      "name": "Entrance warning.001",
+      "type": "FONT",
+      "vertices": 0,
+      "position": [
+        0.0,
+        14.5600004196167,
+        2.1500000953674316
+      ],
+      "dimensions": [
+        1.1725457906723022,
+        0.2750586271286011,
+        0.014000000432133675
+      ],
+      "collections": [
+        "05_Clock_tower_and_entrance.001"
+      ]
+    },
+    {
+      "name": "Emergency exit signage.001",
+      "type": "FONT",
+      "vertices": 0,
+      "position": [
+        0.0,
+        14.520000457763672,
+        3.940000057220459
+      ],
+      "dimensions": [
+        0.36239999532699585,
+        0.1179400086402893,
+        0.014000000432133675
+      ],
+      "collections": [
+        "05_Clock_tower_and_entrance.001"
+      ]
+    },
+    {
+      "name": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "type": "MESH",
+      "vertices": 158976,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        66.14749908447266,
+        40.907501220703125,
+        11.024999618530273
+      ],
+      "collections": [
+        "06_Classroom_furniture.001"
+      ]
+    },
+    {
+      "name": "STAIRS | two external evacuation routes.001",
+      "type": "MESH",
+      "vertices": 7992,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        76.16653442382812,
+        7.700000762939453,
+        13.559932708740234
+      ],
+      "collections": [
+        "06_Classroom_furniture.001"
+      ]
+    },
+    {
+      "name": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "type": "MESH",
+      "vertices": 70416,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        100.97000122070312,
+        79.24839782714844,
+        5.114999771118164
+      ],
+      "collections": [
+        "07_Boundary_and_gate.001"
+      ]
+    },
+    {
+      "name": "Gate school plaque.001",
+      "type": "FONT",
+      "vertices": 0,
+      "position": [
+        15.0,
+        -31.520000457763672,
+        2.4000000953674316
+      ],
+      "dimensions": [
+        2.330630302429199,
+        0.5542819499969482,
+        0.04599999636411667
+      ],
+      "collections": [
+        "07_Boundary_and_gate.001"
+      ]
+    },
+    {
+      "name": "Gate closure date.001",
+      "type": "FONT",
+      "vertices": 0,
+      "position": [
+        15.0,
+        -31.530000686645508,
+        1.7799999713897705
+      ],
+      "dimensions": [
+        1.8984822034835815,
+        0.12800371646881104,
+        0.014000000432133675
+      ],
+      "collections": [
+        "07_Boundary_and_gate.001"
+      ]
+    },
+    {
+      "name": "PROPS | abandoned basketball court and benches.001",
+      "type": "MESH",
+      "vertices": 1955,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        42.70000076293945,
+        23.299999237060547,
+        11.199999809265137
+      ],
+      "collections": [
+        "08_Courtyard_props.001"
+      ]
+    },
+    {
+      "name": "Noticeboard warning.001",
+      "type": "FONT",
+      "vertices": 0,
+      "position": [
+        13.0,
+        -6.150000095367432,
+        2.940000057220459
+      ],
+      "dimensions": [
+        1.8835458755493164,
+        0.2075139880180359,
+        0.014000000432133675
+      ],
+      "collections": [
+        "08_Courtyard_props.001"
+      ]
+    },
+    {
+      "name": "UTILITIES | sagging overhead cables and lamps.001",
+      "type": "MESH",
+      "vertices": 5388,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        89.0,
+        53.24712371826172,
+        10.00257396697998
+      ],
+      "collections": [
+        "08_Courtyard_props.001"
+      ]
+    },
+    {
+      "name": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "type": "MESH",
+      "vertices": 23931,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        97.55583190917969,
+        78.53807067871094,
+        14.536020278930664
+      ],
+      "collections": [
+        "09_Dead_trees_and_weeds.001"
+      ]
+    },
+    {
+      "name": "DETAIL | weeds in courtyard joints",
+      "type": "MESH",
+      "vertices": 1005,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        10.254353523254395,
+        35.9112434387207,
+        0.24988119304180145
+      ],
+      "collections": [
+        "09_Dead_trees_and_weeds.001"
+      ]
+    },
+    {
+      "name": "DECAY | puddles, cracks, scattered debris.001",
+      "type": "MESH",
+      "vertices": 8706,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        90.45243835449219,
+        53.052207946777344,
+        1.2703030109405518
+      ],
+      "collections": [
+        "10_Decay_and_debris.001"
+      ]
+    },
+    {
+      "name": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "type": "MESH",
+      "vertices": 29152,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        72.26243591308594,
+        47.87999725341797,
+        17.38304328918457
+      ],
+      "collections": [
+        "10_Decay_and_debris.001"
+      ]
+    },
+    {
+      "name": "MOON | over the abandoned west block.001",
+      "type": "MESH",
+      "vertices": 1106,
+      "position": [
+        -35.0,
+        51.0,
+        39.0
+      ],
+      "dimensions": [
+        6.000005722045898,
+        6.000008583068848,
+        6.0
+      ],
+      "collections": [
+        "12_Atmosphere.001"
+      ]
+    },
+    {
+      "name": "FOG | low lying courtyard mist.001",
+      "type": "MESH",
+      "vertices": 24,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        150.0,
+        165.0,
+        15.0
+      ],
+      "collections": [
+        "12_Atmosphere.001"
+      ]
+    },
+    {
+      "name": "CAM 01 | Arrival / hero.001",
+      "type": "CAMERA",
+      "vertices": 0,
+      "position": [
+        57.0,
+        -83.0,
+        28.0
+      ],
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collections": [
+        "13_Cameras.001"
+      ]
+    },
+    {
+      "name": "CAM 02 | Player at gate.001",
+      "type": "CAMERA",
+      "vertices": 0,
+      "position": [
+        0.0,
+        -37.0,
+        2.049999952316284
+      ],
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collections": [
+        "13_Cameras.001"
+      ]
+    },
+    {
+      "name": "CAM 03 | Courtyard exploration.001",
+      "type": "CAMERA",
+      "vertices": 0,
+      "position": [
+        -15.0,
+        -17.0,
+        1.7200000286102295
+      ],
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collections": [
+        "13_Cameras.001"
+      ]
+    },
+    {
+      "name": "CAM 04 | Campus overview.001",
+      "type": "CAMERA",
+      "vertices": 0,
+      "position": [
+        78.0,
+        -93.0,
+        72.0
+      ],
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collections": [
+        "13_Cameras.001"
+      ]
+    },
+    {
+      "name": "CAM 05 | Classroom 2F.001",
+      "type": "CAMERA",
+      "vertices": 0,
+      "position": [
+        -21.549999237060547,
+        27.0,
+        6.25
+      ],
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collections": [
+        "13_Cameras.001"
+      ]
+    },
+    {
+      "name": "GYMNASIUM | rear service hall.001",
+      "type": "MESH",
+      "vertices": 216,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        21.0,
+        18.0,
+        10.0
+      ],
+      "collections": [
+        "14_Gymnasium.001"
+      ]
+    },
+    {
+      "name": "V2 | entrance arcade and carved stonework",
+      "type": "MESH",
+      "vertices": 832,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        13.350000381469727,
+        7.899999618530273,
+        12.774999618530273
+      ],
+      "collections": [
+        "15_Architectural_refinement"
+      ]
+    },
+    {
+      "name": "V2 | foundation inscription",
+      "type": "FONT",
+      "vertices": 0,
+      "position": [
+        0.0,
+        14.399999618530273,
+        8.640000343322754
+      ],
+      "dimensions": [
+        1.8735175132751465,
+        0.19910605251789093,
+        0.014000000432133675
+      ],
+      "collections": [
+        "15_Architectural_refinement"
+      ]
+    },
+    {
+      "name": "V2 | clock dial and cornices",
+      "type": "MESH",
+      "vertices": 5142,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        10.351886749267578,
+        4.634902000427246,
+        6.439999580383301
+      ],
+      "collections": [
+        "15_Architectural_refinement"
+      ]
+    },
+    {
+      "name": "V2 | facade profiles, corbels and service conduits",
+      "type": "MESH",
+      "vertices": 11056,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        67.69999694824219,
+        34.779998779296875,
+        13.699052810668945
+      ],
+      "collections": [
+        "15_Architectural_refinement"
+      ]
+    },
+    {
+      "name": "V2 | gate lanterns, masonry joints and iron scrollwork",
+      "type": "MESH",
+      "vertices": 5746,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        21.440000534057617,
+        5.804443359375,
+        5.261000156402588
+      ],
+      "collections": [
+        "15_Architectural_refinement"
+      ]
+    },
+    {
+      "name": "V2 | entry fixtures and bronze sign lighting",
+      "type": "MESH",
+      "vertices": 128,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        8.039999961853027,
+        1.0600004196166992,
+        10.375
+      ],
+      "collections": [
+        "15_Architectural_refinement"
+      ]
+    },
+    {
+      "name": "V2 | drains and planted courtyard edges",
+      "type": "MESH",
+      "vertices": 5144,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        46.81999969482422,
+        36.959999084472656,
+        0.47999998927116394
+      ],
+      "collections": [
+        "15_Architectural_refinement"
+      ]
+    },
+    {
+      "name": "V2 | abandoned bicycles and rack",
+      "type": "MESH",
+      "vertices": 8557,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        4.287642478942871,
+        1.9842338562011719,
+        1.1590263843536377
+      ],
+      "collections": [
+        "15_Architectural_refinement"
+      ]
+    },
+    {
+      "name": "V2 | small mechanical and courtyard details",
+      "type": "MESH",
+      "vertices": 3848,
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        55.887123107910156,
+        37.369998931884766,
+        6.505000114440918
+      ],
+      "collections": [
+        "15_Architectural_refinement"
+      ]
+    },
+    {
+      "name": "CAM 06 | Entrance architectural detail",
+      "type": "CAMERA",
+      "vertices": 0,
+      "position": [
+        14.0,
+        -19.0,
+        5.5
+      ],
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "collections": [
+        "15_Architectural_refinement"
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "ASPHALT | damp and broken.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL",
+        "TEX_COORD",
+        "TEX_NOISE",
+        "VALTORGB",
+        "TEX_NOISE",
+        "BUMP"
+      ]
+    },
+    {
+      "name": "ATMOSPHERE | ground mist / height falloff.001",
+      "nodes": [
+        "OUTPUT_MATERIAL",
+        "PRINCIPLED_VOLUME",
+        "TEX_COORD",
+        "SEPXYZ",
+        "MAP_RANGE"
+      ]
+    },
+    {
+      "name": "BRICK | soot red.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL",
+        "TEX_COORD",
+        "TEX_NOISE",
+        "VALTORGB",
+        "TEX_NOISE",
+        "BUMP"
+      ]
+    },
+    {
+      "name": "CONCRETE | salt and rain.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL",
+        "TEX_COORD",
+        "TEX_NOISE",
+        "VALTORGB",
+        "TEX_NOISE",
+        "BUMP",
+        "TEX_COORD",
+        "VECT_MATH",
+        "TEX_NOISE",
+        "VALTORGB",
+        "MIX_RGB"
+      ]
+    },
+    {
+      "name": "EARTH | moss and mud.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL",
+        "TEX_COORD",
+        "TEX_NOISE",
+        "VALTORGB",
+        "TEX_NOISE",
+        "BUMP"
+      ]
+    },
+    {
+      "name": "GLASS | dead dark green.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL",
+        "TEX_NOISE",
+        "TEX_COORD",
+        "BUMP"
+      ]
+    },
+    {
+      "name": "GRASS | dead olive.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL"
+      ]
+    },
+    {
+      "name": "LIGHT | dying tungsten.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL"
+      ]
+    },
+    {
+      "name": "LIGHT | emergency red.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL"
+      ]
+    },
+    {
+      "name": "LIGHT | sick fluorescent.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL"
+      ]
+    },
+    {
+      "name": "METAL | oxidised iron.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL",
+        "TEX_COORD",
+        "TEX_NOISE",
+        "VALTORGB",
+        "TEX_NOISE",
+        "BUMP"
+      ]
+    },
+    {
+      "name": "MOON | crater mottling.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL",
+        "TEX_COORD",
+        "TEX_NOISE",
+        "VALTORGB",
+        "TEX_NOISE",
+        "BUMP"
+      ]
+    },
+    {
+      "name": "PAINT | court markings.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL"
+      ]
+    },
+    {
+      "name": "PAINT | faded ivory.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL",
+        "TEX_COORD",
+        "TEX_NOISE",
+        "VALTORGB",
+        "TEX_NOISE",
+        "BUMP"
+      ]
+    },
+    {
+      "name": "PAINT | peeling institutional green.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL",
+        "TEX_COORD",
+        "TEX_NOISE",
+        "VALTORGB",
+        "TEX_NOISE",
+        "BUMP",
+        "TEX_COORD",
+        "VECT_MATH",
+        "TEX_NOISE",
+        "VALTORGB",
+        "MIX_RGB"
+      ]
+    },
+    {
+      "name": "PAINT | warning crimson.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL",
+        "TEX_COORD",
+        "TEX_NOISE",
+        "VALTORGB",
+        "TEX_NOISE",
+        "BUMP"
+      ]
+    },
+    {
+      "name": "PAPER | old notices.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL",
+        "TEX_COORD",
+        "TEX_NOISE",
+        "VALTORGB",
+        "TEX_NOISE",
+        "BUMP"
+      ]
+    },
+    {
+      "name": "PAVING | rain polished concrete.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL",
+        "TEX_COORD",
+        "TEX_NOISE",
+        "VALTORGB",
+        "TEX_NOISE",
+        "BUMP"
+      ]
+    },
+    {
+      "name": "PLASTER | water stained ash.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL",
+        "TEX_COORD",
+        "TEX_NOISE",
+        "VALTORGB",
+        "TEX_NOISE",
+        "BUMP",
+        "TEX_COORD",
+        "VECT_MATH",
+        "TEX_NOISE",
+        "VALTORGB",
+        "MIX_RGB"
+      ]
+    },
+    {
+      "name": "ROOF | tar and gravel.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL",
+        "TEX_COORD",
+        "TEX_NOISE",
+        "VALTORGB",
+        "TEX_NOISE",
+        "BUMP"
+      ]
+    },
+    {
+      "name": "STAIN | rain runoff.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL"
+      ]
+    },
+    {
+      "name": "TREE | dead bark.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL",
+        "TEX_COORD",
+        "TEX_NOISE",
+        "VALTORGB",
+        "TEX_NOISE",
+        "BUMP"
+      ]
+    },
+    {
+      "name": "V2 | aged bronze lettering.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL",
+        "TEX_COORD",
+        "TEX_NOISE",
+        "VALTORGB",
+        "TEX_NOISE",
+        "BUMP"
+      ]
+    },
+    {
+      "name": "V2 | carved limestone mouldings.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL",
+        "TEX_COORD",
+        "TEX_NOISE",
+        "VALTORGB",
+        "TEX_NOISE",
+        "BUMP"
+      ]
+    },
+    {
+      "name": "V2 | cracked bicycle tyres.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL"
+      ]
+    },
+    {
+      "name": "V2 | glazed green roof tiles.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL",
+        "TEX_COORD",
+        "TEX_NOISE",
+        "VALTORGB",
+        "TEX_NOISE",
+        "BUMP"
+      ]
+    },
+    {
+      "name": "V2 | pale aged brass letters",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL"
+      ]
+    },
+    {
+      "name": "V2 | zinc drain grating.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL"
+      ]
+    },
+    {
+      "name": "VOID | unlit rooms.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL"
+      ]
+    },
+    {
+      "name": "WATER | standing rain.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL",
+        "TEX_NOISE",
+        "TEX_COORD",
+        "BUMP"
+      ]
+    },
+    {
+      "name": "WOOD | rotten boards.001",
+      "nodes": [
+        "BSDF_PRINCIPLED",
+        "OUTPUT_MATERIAL",
+        "TEX_COORD",
+        "TEX_NOISE",
+        "VALTORGB",
+        "TEX_NOISE",
+        "BUMP"
+      ]
+    }
+  ],
+  "lights": [
+    {
+      "name": "ACADEMIC A | sixteen bays / three storeys room 0-0.001",
+      "type": "POINT",
+      "position": [
+        -31.5,
+        18.0,
+        3.1600000858306885
+      ],
+      "color": [
+        1.0,
+        0.3799999952316284,
+        0.10000000149011612
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ACADEMIC A | sixteen bays / three storeys room 0-9.001",
+      "type": "POINT",
+      "position": [
+        6.300000190734863,
+        18.0,
+        3.1600000858306885
+      ],
+      "color": [
+        0.550000011920929,
+        0.800000011920929,
+        0.6499999761581421
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ACADEMIC A | sixteen bays / three storeys room 1-2.001",
+      "type": "POINT",
+      "position": [
+        -23.100000381469727,
+        18.0,
+        7.360000133514404
+      ],
+      "color": [
+        0.550000011920929,
+        0.800000011920929,
+        0.6499999761581421
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ACADEMIC A | sixteen bays / three storeys room 1-5.001",
+      "type": "POINT",
+      "position": [
+        -10.5,
+        18.0,
+        7.360000133514404
+      ],
+      "color": [
+        0.550000011920929,
+        0.800000011920929,
+        0.6499999761581421
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ACADEMIC A | sixteen bays / three storeys room 1-7.001",
+      "type": "POINT",
+      "position": [
+        -2.0999999046325684,
+        18.0,
+        7.360000133514404
+      ],
+      "color": [
+        0.550000011920929,
+        0.800000011920929,
+        0.6499999761581421
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ACADEMIC A | sixteen bays / three storeys room 1-14.001",
+      "type": "POINT",
+      "position": [
+        27.299999237060547,
+        18.0,
+        7.360000133514404
+      ],
+      "color": [
+        1.0,
+        0.3799999952316284,
+        0.10000000149011612
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ACADEMIC B | west return room 1-3.001",
+      "type": "POINT",
+      "position": [
+        -25.0,
+        -2.700000047683716,
+        7.360000133514404
+      ],
+      "color": [
+        0.550000011920929,
+        0.800000011920929,
+        0.6499999761581421
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ACADEMIC B | west return room 1-4.001",
+      "type": "POINT",
+      "position": [
+        -25.0,
+        1.5,
+        7.360000133514404
+      ],
+      "color": [
+        1.0,
+        0.3799999952316284,
+        0.10000000149011612
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ACADEMIC B | west return room 2-2.001",
+      "type": "POINT",
+      "position": [
+        -25.0,
+        -6.900000095367432,
+        11.5600004196167
+      ],
+      "color": [
+        0.550000011920929,
+        0.800000011920929,
+        0.6499999761581421
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ACADEMIC C | east return room 1-3.001",
+      "type": "POINT",
+      "position": [
+        25.0,
+        1.5,
+        7.360000133514404
+      ],
+      "color": [
+        1.0,
+        0.3799999952316284,
+        0.10000000149011612
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ACADEMIC C | east return room 1-4.001",
+      "type": "POINT",
+      "position": [
+        25.0,
+        -2.700000047683716,
+        7.360000133514404
+      ],
+      "color": [
+        0.550000011920929,
+        0.800000011920929,
+        0.6499999761581421
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ACADEMIC C | east return room 1-5.001",
+      "type": "POINT",
+      "position": [
+        25.0,
+        -6.900000095367432,
+        7.360000133514404
+      ],
+      "color": [
+        1.0,
+        0.3799999952316284,
+        0.10000000149011612
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ACADEMIC C | east return room 2-0.001",
+      "type": "POINT",
+      "position": [
+        25.0,
+        14.100000381469727,
+        11.5600004196167
+      ],
+      "color": [
+        1.0,
+        0.3799999952316284,
+        0.10000000149011612
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ENTRANCE | emergency bleed.001",
+      "type": "POINT",
+      "position": [
+        0.0,
+        13.699999809265137,
+        3.700000047683716
+      ],
+      "color": [
+        1.0,
+        0.012000000104308128,
+        0.00800000037997961
+      ],
+      "energy": 210.0
+    },
+    {
+      "name": "PORTICO | failing fluorescent.001",
+      "type": "AREA",
+      "position": [
+        0.0,
+        11.0,
+        4.119999885559082
+      ],
+      "color": [
+        0.4300000071525574,
+        0.7099999785423279,
+        0.5699999928474426
+      ],
+      "energy": 230.0
+    },
+    {
+      "name": "GATE | sodium -1.001",
+      "type": "POINT",
+      "position": [
+        -10.199999809265137,
+        -31.0,
+        4.599999904632568
+      ],
+      "color": [
+        1.0,
+        0.3499999940395355,
+        0.07999999821186066
+      ],
+      "energy": 140.0
+    },
+    {
+      "name": "GATE | sodium 1.001",
+      "type": "POINT",
+      "position": [
+        10.199999809265137,
+        -31.0,
+        4.599999904632568
+      ],
+      "color": [
+        1.0,
+        0.3499999940395355,
+        0.07999999821186066
+      ],
+      "energy": 140.0
+    },
+    {
+      "name": "PATH | low sodium pool.004",
+      "type": "AREA",
+      "position": [
+        -18.399999618530273,
+        -20.0,
+        4.550000190734863
+      ],
+      "color": [
+        1.0,
+        0.3799999952316284,
+        0.12999999523162842
+      ],
+      "energy": 180.0
+    },
+    {
+      "name": "PATH | low sodium pool.005",
+      "type": "AREA",
+      "position": [
+        -18.399999618530273,
+        10.0,
+        4.550000190734863
+      ],
+      "color": [
+        1.0,
+        0.3799999952316284,
+        0.12999999523162842
+      ],
+      "energy": 180.0
+    },
+    {
+      "name": "PATH | low sodium pool.006",
+      "type": "AREA",
+      "position": [
+        19.600000381469727,
+        -20.0,
+        4.550000190734863
+      ],
+      "color": [
+        1.0,
+        0.3799999952316284,
+        0.12999999523162842
+      ],
+      "energy": 180.0
+    },
+    {
+      "name": "PATH | low sodium pool.007",
+      "type": "AREA",
+      "position": [
+        19.600000381469727,
+        10.0,
+        4.550000190734863
+      ],
+      "color": [
+        1.0,
+        0.3799999952316284,
+        0.12999999523162842
+      ],
+      "energy": 180.0
+    },
+    {
+      "name": "MOON | broad cold key.001",
+      "type": "AREA",
+      "position": [
+        -32.0,
+        3.0,
+        48.0
+      ],
+      "color": [
+        0.3799999952316284,
+        0.5699999928474426,
+        1.0
+      ],
+      "energy": 15180.0
+    },
+    {
+      "name": "SKY | front soft fill.001",
+      "type": "AREA",
+      "position": [
+        12.0,
+        -34.0,
+        28.0
+      ],
+      "color": [
+        0.3499999940395355,
+        0.5600000023841858,
+        0.6600000262260437
+      ],
+      "energy": 7920.0
+    },
+    {
+      "name": "RIM | distant moon bounce.001",
+      "type": "AREA",
+      "position": [
+        2.0,
+        43.0,
+        33.0
+      ],
+      "color": [
+        0.27000001072883606,
+        0.41999998688697815,
+        0.7200000286102295
+      ],
+      "energy": 12540.0
+    },
+    {
+      "name": "MOON | long shadows.001",
+      "type": "SUN",
+      "position": [
+        -20.0,
+        0.0,
+        30.0
+      ],
+      "color": [
+        0.4000000059604645,
+        0.550000011920929,
+        0.8199999928474426
+      ],
+      "energy": 0.30000001192092896
+    },
+    {
+      "name": "CLASSROOM | last working tube",
+      "type": "AREA",
+      "position": [
+        -23.100000381469727,
+        21.5,
+        8.539999961853027
+      ],
+      "color": [
+        0.4000000059604645,
+        0.6800000071525574,
+        0.5400000214576721
+      ],
+      "energy": 110.0
+    },
+    {
+      "name": "V2 | name grazing -3.001",
+      "type": "AREA",
+      "position": [
+        -3.3499999046325684,
+        13.899999618530273,
+        12.149999618530273
+      ],
+      "color": [
+        1.0,
+        0.6499999761581421,
+        0.3100000023841858
+      ],
+      "energy": 75.0
+    },
+    {
+      "name": "V2 | name grazing 3.35",
+      "type": "AREA",
+      "position": [
+        3.3499999046325684,
+        13.899999618530273,
+        12.149999618530273
+      ],
+      "color": [
+        1.0,
+        0.6499999761581421,
+        0.3100000023841858
+      ],
+      "energy": 75.0
+    }
+  ]
+}

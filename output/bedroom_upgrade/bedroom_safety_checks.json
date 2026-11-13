@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Open bedroom remains safe during 25 seconds of silent patrol",
+    "passed": true,
+    "detail": 1735
+  },
+  {
+    "name": "Heard room noise permits Anon to enter",
+    "passed": true,
+    "detail": {
+      "permitted": true,
+      "entered": true
+    }
+  }
+]

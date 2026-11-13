@@ -1,0 +1,95 @@
+[
+  {
+    "name": "Spawn grounded",
+    "passed": true,
+    "detail": "(0.00, 0.18, 24.00)"
+  },
+  {
+    "name": "WASD walking",
+    "passed": true,
+    "detail": 2.62201118
+  },
+  {
+    "name": "Paving camera stability",
+    "passed": true,
+    "detail": 6.31809235E-06
+  },
+  {
+    "name": "Sprint faster than walk",
+    "passed": true,
+    "detail": 4.939024
+  },
+  {
+    "name": "Sprint produces controlled head bob",
+    "passed": true,
+    "detail": 0.0479322672
+  },
+  {
+    "name": "Ctrl crouches",
+    "passed": true,
+    "detail": 1.15
+  },
+  {
+    "name": "Stand after release",
+    "passed": true,
+    "detail": 1.8
+  },
+  {
+    "name": "Door interaction ray hits a door",
+    "passed": true,
+    "detail": "Door Leaf"
+  },
+  {
+    "name": "E opens both door leaves",
+    "passed": true,
+    "detail": [
+      260.0,
+      99.99999
+    ]
+  },
+  {
+    "name": "Walk through open entrance and into building",
+    "passed": false,
+    "detail": "(0.65, 0.37, -15.79)"
+  },
+  {
+    "name": "Facade collision blocks player",
+    "passed": true,
+    "detail": "(8.04, 0.18, -16.47)"
+  },
+  {
+    "name": "Esc pauses movement",
+    "passed": false,
+    "detail": false
+  },
+  {
+    "name": "Esc resumes movement",
+    "passed": true,
+    "detail": false
+  },
+  {
+    "name": "Space does not jump",
+    "passed": true,
+    "detail": 2.38418579E-07
+  },
+  {
+    "name": "Alt looks back",
+    "passed": false,
+    "detail": -7.770798E-31
+  },
+  {
+    "name": "Looking back preserves forward movement",
+    "passed": true,
+    "detail": "(0.00, 0.18, 21.07)"
+  },
+  {
+    "name": "Releasing Alt restores forward view",
+    "passed": true,
+    "detail": -4.200863E-33
+  },
+  {
+    "name": "No runtime errors",
+    "passed": true,
+    "detail": []
+  }
+]

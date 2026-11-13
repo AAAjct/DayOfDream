@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Ground Floor Landing",
+    "sample": true,
+    "passed": true,
+    "status": "PathComplete"
+  },
+  {
+    "name": "Second Floor Landing",
+    "sample": true,
+    "passed": true,
+    "status": "PathComplete"
+  },
+  {
+    "name": "Attic Landing",
+    "sample": true,
+    "passed": true,
+    "status": "PathComplete"
+  },
+  {
+    "name": "Library Interior",
+    "sample": true,
+    "passed": true,
+    "status": "PathComplete"
+  },
+  {
+    "name": "Guest Bedroom Interior",
+    "sample": true,
+    "passed": true,
+    "status": "PathComplete"
+  },
+  {
+    "name": "Master Bedroom Interior",
+    "sample": true,
+    "passed": true,
+    "status": "PathComplete"
+  },
+  {
+    "name": "Bathroom Interior",
+    "sample": true,
+    "passed": true,
+    "status": "PathComplete"
+  },
+  {
+    "name": "Attic West Interior",
+    "sample": true,
+    "passed": true,
+    "status": "PathComplete"
+  },
+  {
+    "name": "Attic East Interior",
+    "sample": true,
+    "passed": true,
+    "status": "PathComplete"
+  },
+  {
+    "name": "Attic Central Aisle",
+    "sample": true,
+    "passed": true,
+    "status": "PathComplete"
+  },
+  {
+    "name": "Basement Boiler Interior",
+    "sample": true,
+    "passed": true,
+    "status": "PathComplete"
+  },
+  {
+    "name": "Basement Storage Interior",
+    "sample": true,
+    "passed": true,
+    "status": "PathComplete"
+  },
+  {
+    "name": "Courtyard Kitchen Terrace",
+    "sample": true,
+    "passed": true,
+    "status": "PathComplete"
+  },
+  {
+    "name": "Courtyard Fountain",
+    "sample": true,
+    "passed": true,
+    "status": "PathComplete"
+  },
+  {
+    "name": "Courtyard South",
+    "sample": true,
+    "passed": true,
+    "status": "PathComplete"
+  },
+  {
+    "name": "Courtyard West",
+    "sample": true,
+    "passed": true,
+    "status": "PathComplete"
+  }
+]

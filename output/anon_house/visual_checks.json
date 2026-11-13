@@ -1,0 +1,11 @@
+{
+  "Cellar path remains connected": true,
+  "Blender visual mesh is active": true,
+  "Original shell retained for collision": true,
+  "Outline geometry removed": true,
+  "Shader compiled": true,
+  "Idle animation samples without mesh collapse": true,
+  "Walk animation samples without mesh collapse": true,
+  "Run animation samples without mesh collapse": true,
+  "Attack animation samples without mesh collapse": true
+}

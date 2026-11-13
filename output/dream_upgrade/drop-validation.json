@@ -1,0 +1,21 @@
+[
+  {
+    "stage": 1,
+    "selected": 0,
+    "cursor": "Locked"
+  },
+  {
+    "stage": 2,
+    "selected": 0,
+    "charging": false,
+    "charge": 0.0,
+    "cursor": "Locked"
+  },
+  {
+    "passed": false,
+    "selected": 0,
+    "dv": false,
+    "batteries": 0,
+    "count": 0
+  }
+]

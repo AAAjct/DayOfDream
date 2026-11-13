@@ -1,0 +1,5312 @@
+{
+  "source": "D:\\wenjian\\BlenderAISceneMake\\output\\Haojie_Refined\\Haojie_Horror_School_Refined.blend",
+  "materials": [
+    {
+      "name": "School_00_ASPHALT_damp_and_broken_001",
+      "sourceName": "ASPHALT | damp and broken.001",
+      "color": [
+        0.017999999225139618,
+        0.027000000700354576,
+        0.028999999165534973,
+        1.0
+      ],
+      "texture": "School_00_ASPHALT_damp_and_broken_001.png",
+      "roughness": 0.41999998688697815,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    {
+      "name": "School_02_BRICK_soot_red_001",
+      "sourceName": "BRICK | soot red.001",
+      "color": [
+        0.06499999761581421,
+        0.04699999839067459,
+        0.035999998450279236,
+        1.0
+      ],
+      "texture": "School_02_BRICK_soot_red_001.png",
+      "roughness": 0.8299999833106995,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    {
+      "name": "School_03_CONCRETE_salt_and_rain_001",
+      "sourceName": "CONCRETE | salt and rain.001",
+      "color": [
+        0.11999999731779099,
+        0.14000000059604645,
+        0.14000000059604645,
+        1.0
+      ],
+      "texture": "School_03_CONCRETE_salt_and_rain_001.png",
+      "roughness": 0.8299999833106995,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    {
+      "name": "School_04_EARTH_moss_and_mud_001",
+      "sourceName": "EARTH | moss and mud.001",
+      "color": [
+        0.017000000923871994,
+        0.029999999329447746,
+        0.023000000044703484,
+        1.0
+      ],
+      "texture": "School_04_EARTH_moss_and_mud_001.png",
+      "roughness": 0.8299999833106995,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    {
+      "name": "School_05_GLASS_dead_dark_green_001",
+      "sourceName": "GLASS | dead dark green.001",
+      "color": [
+        0.00800000037997961,
+        0.024000000208616257,
+        0.026000000536441803,
+        1.0
+      ],
+      "texture": "",
+      "roughness": 0.18000000715255737,
+      "metallic": 0.47999998927116394,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    {
+      "name": "School_06_GRASS_dead_olive_001",
+      "sourceName": "GRASS | dead olive.001",
+      "color": [
+        0.10000000149011612,
+        0.12999999523162842,
+        0.05299999937415123,
+        1.0
+      ],
+      "texture": "",
+      "roughness": 0.949999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    {
+      "name": "School_07_LIGHT_dying_tungsten_001",
+      "sourceName": "LIGHT | dying tungsten.001",
+      "color": [
+        0.949999988079071,
+        0.3700000047683716,
+        0.07500000298023224,
+        1.0
+      ],
+      "texture": "",
+      "roughness": 0.3199999928474426,
+      "metallic": 0.0,
+      "emission": [
+        0.949999988079071,
+        0.3700000047683716,
+        0.07500000298023224,
+        1.0
+      ],
+      "emissionStrength": 4.0
+    },
+    {
+      "name": "School_08_LIGHT_emergency_red_001",
+      "sourceName": "LIGHT | emergency red.001",
+      "color": [
+        0.8999999761581421,
+        0.012000000104308128,
+        0.00800000037997961,
+        1.0
+      ],
+      "texture": "",
+      "roughness": 0.3199999928474426,
+      "metallic": 0.0,
+      "emission": [
+        0.8999999761581421,
+        0.012000000104308128,
+        0.00800000037997961,
+        1.0
+      ],
+      "emissionStrength": 7.0
+    },
+    {
+      "name": "School_09_LIGHT_sick_fluorescent_001",
+      "sourceName": "LIGHT | sick fluorescent.001",
+      "color": [
+        0.3199999928474426,
+        0.7200000286102295,
+        0.6100000143051147,
+        1.0
+      ],
+      "texture": "",
+      "roughness": 0.3199999928474426,
+      "metallic": 0.0,
+      "emission": [
+        0.3199999928474426,
+        0.7200000286102295,
+        0.6100000143051147,
+        1.0
+      ],
+      "emissionStrength": 2.799999952316284
+    },
+    {
+      "name": "School_10_METAL_oxidised_iron_001",
+      "sourceName": "METAL | oxidised iron.001",
+      "color": [
+        0.017999999225139618,
+        0.02800000086426735,
+        0.027000000700354576,
+        1.0
+      ],
+      "texture": "School_10_METAL_oxidised_iron_001.png",
+      "roughness": 0.5199999809265137,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    {
+      "name": "School_11_MOON_crater_mottling_001",
+      "sourceName": "MOON | crater mottling.001",
+      "color": [
+        0.23000000417232513,
+        0.3100000023841858,
+        0.36000001430511475,
+        1.0
+      ],
+      "texture": "School_11_MOON_crater_mottling_001.png",
+      "roughness": 0.8999999761581421,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 1.399999976158142
+    },
+    {
+      "name": "School_12_PAINT_court_markings_001",
+      "sourceName": "PAINT | court markings.001",
+      "color": [
+        0.23000000417232513,
+        0.27000001072883606,
+        0.20999999344348907,
+        1.0
+      ],
+      "texture": "",
+      "roughness": 0.6000000238418579,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    {
+      "name": "School_13_PAINT_faded_ivory_001",
+      "sourceName": "PAINT | faded ivory.001",
+      "color": [
+        0.25,
+        0.25999999046325684,
+        0.1899999976158142,
+        1.0
+      ],
+      "texture": "School_13_PAINT_faded_ivory_001.png",
+      "roughness": 0.8299999833106995,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    {
+      "name": "School_14_PAINT_peeling_institutional_green_001",
+      "sourceName": "PAINT | peeling institutional green.001",
+      "color": [
+        0.04500000178813934,
+        0.07999999821186066,
+        0.0689999982714653,
+        1.0
+      ],
+      "texture": "School_14_PAINT_peeling_institutional_green_001.png",
+      "roughness": 0.8299999833106995,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    {
+      "name": "School_15_PAINT_warning_crimson_001",
+      "sourceName": "PAINT | warning crimson.001",
+      "color": [
+        0.06499999761581421,
+        0.006000000052154064,
+        0.00800000037997961,
+        1.0
+      ],
+      "texture": "School_15_PAINT_warning_crimson_001.png",
+      "roughness": 0.8299999833106995,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    {
+      "name": "School_16_PAPER_old_notices_001",
+      "sourceName": "PAPER | old notices.001",
+      "color": [
+        0.15000000596046448,
+        0.14000000059604645,
+        0.09000000357627869,
+        1.0
+      ],
+      "texture": "School_16_PAPER_old_notices_001.png",
+      "roughness": 0.8299999833106995,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    {
+      "name": "School_17_PAVING_rain_polished_concrete_001",
+      "sourceName": "PAVING | rain polished concrete.001",
+      "color": [
+        0.09000000357627869,
+        0.11999999731779099,
+        0.11999999731779099,
+        1.0
+      ],
+      "texture": "School_17_PAVING_rain_polished_concrete_001.png",
+      "roughness": 0.41999998688697815,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    {
+      "name": "School_18_PLASTER_water_stained_ash_001",
+      "sourceName": "PLASTER | water stained ash.001",
+      "color": [
+        0.12999999523162842,
+        0.1550000011920929,
+        0.14000000059604645,
+        1.0
+      ],
+      "texture": "School_18_PLASTER_water_stained_ash_001.png",
+      "roughness": 0.8299999833106995,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    {
+      "name": "School_19_ROOF_tar_and_gravel_001",
+      "sourceName": "ROOF | tar and gravel.001",
+      "color": [
+        0.02500000037252903,
+        0.03799999877810478,
+        0.03999999910593033,
+        1.0
+      ],
+      "texture": "School_19_ROOF_tar_and_gravel_001.png",
+      "roughness": 0.8299999833106995,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    {
+      "name": "School_20_STAIN_rain_runoff_001",
+      "sourceName": "STAIN | rain runoff.001",
+      "color": [
+        0.02800000086426735,
+        0.04899999871850014,
+        0.03700000047683716,
+        1.0
+      ],
+      "texture": "",
+      "roughness": 0.949999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    {
+      "name": "School_21_TREE_dead_bark_001",
+      "sourceName": "TREE | dead bark.001",
+      "color": [
+        0.02500000037252903,
+        0.02800000086426735,
+        0.02199999988079071,
+        1.0
+      ],
+      "texture": "School_21_TREE_dead_bark_001.png",
+      "roughness": 0.8299999833106995,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    {
+      "name": "School_22_V2_aged_bronze_lettering_001",
+      "sourceName": "V2 | aged bronze lettering.001",
+      "color": [
+        0.07999999821186066,
+        0.06700000166893005,
+        0.028999999165534973,
+        1.0
+      ],
+      "texture": "School_22_V2_aged_bronze_lettering_001.png",
+      "roughness": 0.3400000035762787,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    {
+      "name": "School_23_V2_carved_limestone_mouldings_001",
+      "sourceName": "V2 | carved limestone mouldings.001",
+      "color": [
+        0.1899999976158142,
+        0.2199999988079071,
+        0.20499999821186066,
+        1.0
+      ],
+      "texture": "School_23_V2_carved_limestone_mouldings_001.png",
+      "roughness": 0.6899999976158142,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    {
+      "name": "School_24_V2_cracked_bicycle_tyres_001",
+      "sourceName": "V2 | cracked bicycle tyres.001",
+      "color": [
+        0.008999999612569809,
+        0.012000000104308128,
+        0.013000000268220901,
+        1.0
+      ],
+      "texture": "",
+      "roughness": 0.800000011920929,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    {
+      "name": "School_25_V2_glazed_green_roof_tiles_001",
+      "sourceName": "V2 | glazed green roof tiles.001",
+      "color": [
+        0.017999999225139618,
+        0.03999999910593033,
+        0.03500000014901161,
+        1.0
+      ],
+      "texture": "School_25_V2_glazed_green_roof_tiles_001.png",
+      "roughness": 0.3100000023841858,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    {
+      "name": "School_26_V2_pale_aged_brass_letters",
+      "sourceName": "V2 | pale aged brass letters",
+      "color": [
+        0.5199999809265137,
+        0.4699999988079071,
+        0.2800000011920929,
+        1.0
+      ],
+      "texture": "",
+      "roughness": 0.3100000023841858,
+      "metallic": 0.4000000059604645,
+      "emission": [
+        0.11999999731779099,
+        0.09000000357627869,
+        0.02500000037252903,
+        1.0
+      ],
+      "emissionStrength": 0.25
+    },
+    {
+      "name": "School_27_V2_zinc_drain_grating_001",
+      "sourceName": "V2 | zinc drain grating.001",
+      "color": [
+        0.07500000298023224,
+        0.10999999940395355,
+        0.11500000208616257,
+        1.0
+      ],
+      "texture": "",
+      "roughness": 0.3400000035762787,
+      "metallic": 0.7200000286102295,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    {
+      "name": "School_28_VOID_unlit_rooms_001",
+      "sourceName": "VOID | unlit rooms.001",
+      "color": [
+        0.004000000189989805,
+        0.007000000216066837,
+        0.00800000037997961,
+        1.0
+      ],
+      "texture": "",
+      "roughness": 0.8999999761581421,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    {
+      "name": "School_29_WATER_standing_rain_001",
+      "sourceName": "WATER | standing rain.001",
+      "color": [
+        0.02800000086426735,
+        0.054999999701976776,
+        0.05999999865889549,
+        1.0
+      ],
+      "texture": "",
+      "roughness": 0.06499999761581421,
+      "metallic": 0.36000001430511475,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    },
+    {
+      "name": "School_30_WOOD_rotten_boards_001",
+      "sourceName": "WOOD | rotten boards.001",
+      "color": [
+        0.04500000178813934,
+        0.027000000700354576,
+        0.014000000432133675,
+        1.0
+      ],
+      "texture": "School_30_WOOD_rotten_boards_001.png",
+      "roughness": 0.8999999761581421,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissionStrength": 0.0
+    }
+  ],
+  "lights": [
+    {
+      "name": "ACADEMIC A | sixteen bays / three storeys room 0-0.001",
+      "type": "POINT",
+      "position": [
+        -31.5,
+        18.0,
+        3.1600000858306885
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.3799999952316284,
+        0.10000000149011612
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ACADEMIC A | sixteen bays / three storeys room 0-9.001",
+      "type": "POINT",
+      "position": [
+        6.300000190734863,
+        18.0,
+        3.1600000858306885
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color": [
+        0.550000011920929,
+        0.800000011920929,
+        0.6499999761581421
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ACADEMIC A | sixteen bays / three storeys room 1-2.001",
+      "type": "POINT",
+      "position": [
+        -23.100000381469727,
+        18.0,
+        7.360000133514404
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color": [
+        0.550000011920929,
+        0.800000011920929,
+        0.6499999761581421
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ACADEMIC A | sixteen bays / three storeys room 1-5.001",
+      "type": "POINT",
+      "position": [
+        -10.5,
+        18.0,
+        7.360000133514404
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color": [
+        0.550000011920929,
+        0.800000011920929,
+        0.6499999761581421
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ACADEMIC A | sixteen bays / three storeys room 1-7.001",
+      "type": "POINT",
+      "position": [
+        -2.0999999046325684,
+        18.0,
+        7.360000133514404
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color": [
+        0.550000011920929,
+        0.800000011920929,
+        0.6499999761581421
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ACADEMIC A | sixteen bays / three storeys room 1-14.001",
+      "type": "POINT",
+      "position": [
+        27.299999237060547,
+        18.0,
+        7.360000133514404
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.3799999952316284,
+        0.10000000149011612
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ACADEMIC B | west return room 1-3.001",
+      "type": "POINT",
+      "position": [
+        -25.0,
+        -2.700000047683716,
+        7.360000133514404
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color": [
+        0.550000011920929,
+        0.800000011920929,
+        0.6499999761581421
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ACADEMIC B | west return room 1-4.001",
+      "type": "POINT",
+      "position": [
+        -25.0,
+        1.5,
+        7.360000133514404
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.3799999952316284,
+        0.10000000149011612
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ACADEMIC B | west return room 2-2.001",
+      "type": "POINT",
+      "position": [
+        -25.0,
+        -6.900000095367432,
+        11.5600004196167
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color": [
+        0.550000011920929,
+        0.800000011920929,
+        0.6499999761581421
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ACADEMIC C | east return room 1-3.001",
+      "type": "POINT",
+      "position": [
+        25.0,
+        1.5,
+        7.360000133514404
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.3799999952316284,
+        0.10000000149011612
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ACADEMIC C | east return room 1-4.001",
+      "type": "POINT",
+      "position": [
+        25.0,
+        -2.700000047683716,
+        7.360000133514404
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color": [
+        0.550000011920929,
+        0.800000011920929,
+        0.6499999761581421
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ACADEMIC C | east return room 1-5.001",
+      "type": "POINT",
+      "position": [
+        25.0,
+        -6.900000095367432,
+        7.360000133514404
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.3799999952316284,
+        0.10000000149011612
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ACADEMIC C | east return room 2-0.001",
+      "type": "POINT",
+      "position": [
+        25.0,
+        14.100000381469727,
+        11.5600004196167
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.3799999952316284,
+        0.10000000149011612
+      ],
+      "energy": 45.0
+    },
+    {
+      "name": "ENTRANCE | emergency bleed.001",
+      "type": "POINT",
+      "position": [
+        0.0,
+        13.699999809265137,
+        3.700000047683716
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.012000000104308128,
+        0.00800000037997961
+      ],
+      "energy": 210.0
+    },
+    {
+      "name": "PORTICO | failing fluorescent.001",
+      "type": "AREA",
+      "position": [
+        0.0,
+        11.0,
+        4.119999885559082
+      ],
+      "rotation": [
+        0.23811377584934235,
+        2.062041382089319e-08,
+        3.141592502593994
+      ],
+      "color": [
+        0.4300000071525574,
+        0.7099999785423279,
+        0.5699999928474426
+      ],
+      "energy": 230.0
+    },
+    {
+      "name": "GATE | sodium -1.001",
+      "type": "POINT",
+      "position": [
+        -10.199999809265137,
+        -31.0,
+        4.599999904632568
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.3499999940395355,
+        0.07999999821186066
+      ],
+      "energy": 140.0
+    },
+    {
+      "name": "GATE | sodium 1.001",
+      "type": "POINT",
+      "position": [
+        10.199999809265137,
+        -31.0,
+        4.599999904632568
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.3499999940395355,
+        0.07999999821186066
+      ],
+      "energy": 140.0
+    },
+    {
+      "name": "PATH | low sodium pool.004",
+      "type": "AREA",
+      "position": [
+        -18.399999618530273,
+        -20.0,
+        4.550000190734863
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.3799999952316284,
+        0.12999999523162842
+      ],
+      "energy": 180.0
+    },
+    {
+      "name": "PATH | low sodium pool.005",
+      "type": "AREA",
+      "position": [
+        -18.399999618530273,
+        10.0,
+        4.550000190734863
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.3799999952316284,
+        0.12999999523162842
+      ],
+      "energy": 180.0
+    },
+    {
+      "name": "PATH | low sodium pool.006",
+      "type": "AREA",
+      "position": [
+        19.600000381469727,
+        -20.0,
+        4.550000190734863
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.3799999952316284,
+        0.12999999523162842
+      ],
+      "energy": 180.0
+    },
+    {
+      "name": "PATH | low sodium pool.007",
+      "type": "AREA",
+      "position": [
+        19.600000381469727,
+        10.0,
+        4.550000190734863
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.3799999952316284,
+        0.12999999523162842
+      ],
+      "energy": 180.0
+    },
+    {
+      "name": "MOON | broad cold key.001",
+      "type": "AREA",
+      "position": [
+        -32.0,
+        3.0,
+        48.0
+      ],
+      "rotation": [
+        0.5882280468940735,
+        -6.777029426530135e-08,
+        -1.5395565032958984
+      ],
+      "color": [
+        0.3799999952316284,
+        0.5699999928474426,
+        1.0
+      ],
+      "energy": 15180.0
+    },
+    {
+      "name": "SKY | front soft fill.001",
+      "type": "AREA",
+      "position": [
+        12.0,
+        -34.0,
+        28.0
+      ],
+      "rotation": [
+        1.1037079095840454,
+        -2.5331843289677636e-09,
+        0.2662520408630371
+      ],
+      "color": [
+        0.3499999940395355,
+        0.5600000023841858,
+        0.6600000262260437
+      ],
+      "energy": 7920.0
+    },
+    {
+      "name": "RIM | distant moon bounce.001",
+      "type": "AREA",
+      "position": [
+        2.0,
+        43.0,
+        33.0
+      ],
+      "rotation": [
+        0.8338937759399414,
+        -1.2178668740148169e-08,
+        3.0810606479644775
+      ],
+      "color": [
+        0.27000001072883606,
+        0.41999998688697815,
+        0.7200000286102295
+      ],
+      "energy": 12540.0
+    },
+    {
+      "name": "MOON | long shadows.001",
+      "type": "SUN",
+      "position": [
+        -20.0,
+        0.0,
+        30.0
+      ],
+      "rotation": [
+        0.6947382092475891,
+        1.5038332890071615e-07,
+        -0.9272952079772949
+      ],
+      "color": [
+        0.4000000059604645,
+        0.550000011920929,
+        0.8199999928474426
+      ],
+      "energy": 0.30000001192092896
+    },
+    {
+      "name": "CLASSROOM | last working tube",
+      "type": "AREA",
+      "position": [
+        -23.100000381469727,
+        21.5,
+        8.539999961853027
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "color": [
+        0.4000000059604645,
+        0.6800000071525574,
+        0.5400000214576721
+      ],
+      "energy": 110.0
+    },
+    {
+      "name": "V2 | name grazing -3.001",
+      "type": "AREA",
+      "position": [
+        -3.3499999046325684,
+        13.899999618530273,
+        12.149999618530273
+      ],
+      "rotation": [
+        0.47646772861480713,
+        -0.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.6499999761581421,
+        0.3100000023841858
+      ],
+      "energy": 75.0
+    },
+    {
+      "name": "V2 | name grazing 3.35",
+      "type": "AREA",
+      "position": [
+        3.3499999046325684,
+        13.899999618530273,
+        12.149999618530273
+      ],
+      "rotation": [
+        0.47646772861480713,
+        -0.0,
+        0.0
+      ],
+      "color": [
+        1.0,
+        0.6499999761581421,
+        0.3100000023841858
+      ],
+      "energy": 75.0
+    }
+  ],
+  "chunks": [
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_-6_-6_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 32,
+      "faces": 8,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_-6_5_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 32,
+      "faces": 8,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_5_5_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 32,
+      "faces": 8,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_5_-6_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 32,
+      "faces": 8,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_-4_-4_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 32,
+      "faces": 8,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_-4_2_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 32,
+      "faces": 8,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_3_2_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 32,
+      "faces": 8,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_3_-4_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 32,
+      "faces": 8,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_-1_-4_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 52,
+      "faces": 13,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_-1_-3_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 2772,
+      "faces": 693,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_0_-3_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 2772,
+      "faces": 693,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_0_-4_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 100,
+      "faces": 25,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_-3_-2_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 116,
+      "faces": 29,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_-3_0_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 1412,
+      "faces": 353,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_-2_0_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 4156,
+      "faces": 1039,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_-2_-2_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 268,
+      "faces": 67,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_1_-2_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 200,
+      "faces": 50,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_1_0_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 4088,
+      "faces": 1022,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_2_0_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 1480,
+      "faces": 370,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_2_-2_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 184,
+      "faces": 46,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_-1_-2_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 5076,
+      "faces": 1269,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_-1_-1_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 4776,
+      "faces": 1194,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_-1_0_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 8660,
+      "faces": 2165,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_0_-2_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 5172,
+      "faces": 1293,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_0_-1_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 4640,
+      "faces": 1160,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_0_0_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 8784,
+      "faces": 2196,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_-4_-3_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 84,
+      "faces": 21,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_-4_3_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 84,
+      "faces": 21,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_3_-3_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 84,
+      "faces": 21,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_3_3_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 84,
+      "faces": 21,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_0_-6_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 20,
+      "faces": 5,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_-6_0_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 20,
+      "faces": 5,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_-4_-1_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 20,
+      "faces": 5,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_-3_-1_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 20,
+      "faces": 5,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_1_-1_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 68,
+      "faces": 17,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_-2_-1_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 76,
+      "faces": 19,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_-4_0_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 48,
+      "faces": 12,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_3_0_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 48,
+      "faces": 12,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_0_5_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 20,
+      "faces": 5,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_0_2_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 20,
+      "faces": 5,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_5_0_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 20,
+      "faces": 5,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_3_-1_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 20,
+      "faces": 5,
+      "collision": true
+    },
+    {
+      "name": "SITE_foundation_lawns_and_paths_001_2_-1_0",
+      "source": "SITE | foundation, lawns and paths.001",
+      "vertices": 28,
+      "faces": 7,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_-3_1_0",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 8387,
+      "faces": 2092,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_-3_2_0",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 7848,
+      "faces": 1958,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_2_2_0",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 8924,
+      "faces": 2227,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_2_1_0",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 8607,
+      "faces": 2147,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_-3_1_1",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 8584,
+      "faces": 2142,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_-3_2_1",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 9068,
+      "faces": 2263,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_-2_1_0",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 9280,
+      "faces": 2314,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_-2_2_0",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 9332,
+      "faces": 2327,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_-2_1_1",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 9360,
+      "faces": 2334,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_-2_2_1",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 10656,
+      "faces": 2658,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_-1_1_0",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 9172,
+      "faces": 2288,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_-1_2_0",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 9420,
+      "faces": 2350,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_-1_1_1",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 9520,
+      "faces": 2374,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_-1_2_1",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 10128,
+      "faces": 2526,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_0_2_0",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 8760,
+      "faces": 2186,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_0_1_0",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 10160,
+      "faces": 2536,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_0_1_1",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 10356,
+      "faces": 2585,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_0_2_1",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 10908,
+      "faces": 2723,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_1_1_0",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 8632,
+      "faces": 2152,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_1_2_0",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 9028,
+      "faces": 2251,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_1_1_1",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 9360,
+      "faces": 2334,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_1_2_1",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 10320,
+      "faces": 2574,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_2_1_1",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 8804,
+      "faces": 2197,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_2_2_1",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 9748,
+      "faces": 2433,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_-3_1_2",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 7852,
+      "faces": 1959,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_-3_2_2",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 8204,
+      "faces": 2047,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_-2_1_2",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 8496,
+      "faces": 2118,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_-2_2_2",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 10656,
+      "faces": 2658,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_-1_1_2",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 9304,
+      "faces": 2320,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_-1_2_2",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 9912,
+      "faces": 2472,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_0_1_2",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 9924,
+      "faces": 2477,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_0_2_2",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 11340,
+      "faces": 2831,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_1_1_2",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 10224,
+      "faces": 2550,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_1_2_2",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 10320,
+      "faces": 2574,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_2_1_2",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 8288,
+      "faces": 2068,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_2_2_2",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 9748,
+      "faces": 2433,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_-3_1_3",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 979,
+      "faces": 244,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_-3_2_3",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 1464,
+      "faces": 366,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_-2_1_3",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 324,
+      "faces": 81,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_-2_2_3",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 1260,
+      "faces": 315,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_-1_1_3",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 428,
+      "faces": 107,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_-1_2_3",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 1388,
+      "faces": 347,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_0_1_3",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 516,
+      "faces": 129,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_0_2_3",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 1448,
+      "faces": 362,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_1_1_3",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 156,
+      "faces": 39,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_1_2_3",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 964,
+      "faces": 241,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_2_1_3",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 811,
+      "faces": 202,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_A_sixteen_bays_three_storeys_001_2_2_3",
+      "source": "ACADEMIC A | sixteen bays / three storeys.001",
+      "vertices": 1252,
+      "faces": 313,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_1_1_0",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 1471,
+      "faces": 367,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_3_1_0",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 244,
+      "faces": 61,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_3_-2_0",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 296,
+      "faces": 74,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_1_-2_0",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 1871,
+      "faces": 467,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_2_1_0",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 5420,
+      "faces": 1351,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_2_1_1",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 6620,
+      "faces": 1651,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_2_0_0",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 17112,
+      "faces": 4270,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_2_0_1",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 17072,
+      "faces": 4260,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_2_-1_0",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 14968,
+      "faces": 3730,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_2_-1_1",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 16900,
+      "faces": 4213,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_2_-2_0",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 7956,
+      "faces": 1985,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_2_-2_1",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 9316,
+      "faces": 2325,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_1_1_1",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 1644,
+      "faces": 411,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_3_1_1",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 264,
+      "faces": 66,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_3_-2_1",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 316,
+      "faces": 79,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_1_-2_1",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 1696,
+      "faces": 424,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_2_1_2",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 6620,
+      "faces": 1651,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_2_0_2",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 17720,
+      "faces": 4422,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_2_-1_2",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 15472,
+      "faces": 3856,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_2_-2_2",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 8368,
+      "faces": 2088,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_1_1_2",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 1560,
+      "faces": 390,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_3_1_2",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 264,
+      "faces": 66,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_3_-2_2",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 316,
+      "faces": 79,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_1_-2_2",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 1396,
+      "faces": 349,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_2_1_3",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 1144,
+      "faces": 286,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_2_0_3",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 1512,
+      "faces": 378,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_2_-1_3",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 1172,
+      "faces": 293,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_2_-2_3",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 860,
+      "faces": 215,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_1_1_3",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 483,
+      "faces": 120,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_3_1_3",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 336,
+      "faces": 84,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_3_-2_3",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 336,
+      "faces": 84,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_1_-2_3",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 483,
+      "faces": 120,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_1_0_0",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 2236,
+      "faces": 559,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_1_-1_0",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 1944,
+      "faces": 486,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_3_0_0",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 292,
+      "faces": 73,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_3_-1_0",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 348,
+      "faces": 87,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_1_0_1",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 3316,
+      "faces": 829,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_1_-1_1",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 2520,
+      "faces": 630,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_3_0_1",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 292,
+      "faces": 73,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_3_-1_1",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 360,
+      "faces": 90,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_1_0_2",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 2236,
+      "faces": 559,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_1_-1_2",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 2088,
+      "faces": 522,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_3_0_2",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 292,
+      "faces": 73,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_3_-1_2",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 360,
+      "faces": 90,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_1_-1_3",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 148,
+      "faces": 37,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_C_east_return_001_3_-1_3",
+      "source": "ACADEMIC C | east return.001",
+      "vertices": 148,
+      "faces": 37,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-2_-2_0",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 1091,
+      "faces": 272,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-4_-2_0",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 296,
+      "faces": 74,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-4_1_0",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 244,
+      "faces": 61,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-2_1_0",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 1471,
+      "faces": 367,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-3_-2_0",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 7908,
+      "faces": 1973,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-3_-2_1",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 8116,
+      "faces": 2025,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-3_-1_0",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 15320,
+      "faces": 3818,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-3_-1_1",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 16672,
+      "faces": 4156,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-3_0_0",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 16532,
+      "faces": 4125,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-3_0_1",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 16448,
+      "faces": 4104,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-3_1_0",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 6776,
+      "faces": 1690,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-3_1_1",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 7376,
+      "faces": 1840,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-2_-2_1",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 1696,
+      "faces": 424,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-4_-2_1",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 316,
+      "faces": 79,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-4_1_1",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 264,
+      "faces": 66,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-2_1_1",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 1644,
+      "faces": 411,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-3_-2_2",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 8632,
+      "faces": 2154,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-3_-1_2",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 17020,
+      "faces": 4243,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-3_0_2",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 17744,
+      "faces": 4428,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-3_1_2",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 7160,
+      "faces": 1786,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-2_-2_2",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 1648,
+      "faces": 412,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-4_-2_2",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 316,
+      "faces": 79,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-4_1_2",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 264,
+      "faces": 66,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-2_1_2",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 1128,
+      "faces": 282,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-3_-2_3",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 1240,
+      "faces": 310,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-3_-1_3",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 1636,
+      "faces": 409,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-3_0_3",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 1036,
+      "faces": 259,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-3_1_3",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 776,
+      "faces": 194,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-2_-2_3",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 483,
+      "faces": 120,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-4_-2_3",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 336,
+      "faces": 84,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-4_1_3",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 336,
+      "faces": 84,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-2_1_3",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 483,
+      "faces": 120,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-2_-1_0",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 3348,
+      "faces": 835,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-2_0_0",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 3316,
+      "faces": 829,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-4_-1_0",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 348,
+      "faces": 87,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-4_0_0",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 292,
+      "faces": 73,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-2_-1_1",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 3384,
+      "faces": 846,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-2_0_1",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 2668,
+      "faces": 667,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-4_-1_1",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 360,
+      "faces": 90,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-4_0_1",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 292,
+      "faces": 73,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-2_-1_2",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 3132,
+      "faces": 783,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-2_0_2",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 2884,
+      "faces": 721,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-4_-1_2",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 360,
+      "faces": 90,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-4_0_2",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 292,
+      "faces": 73,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-2_-1_3",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 148,
+      "faces": 37,
+      "collision": true
+    },
+    {
+      "name": "ACADEMIC_B_west_return_001_-4_-1_3",
+      "source": "ACADEMIC B | west return.001",
+      "vertices": 148,
+      "faces": 37,
+      "collision": true
+    },
+    {
+      "name": "ENTRANCE_clock_tower_and_portico_001_0_0_0",
+      "source": "ENTRANCE | clock tower and portico.001",
+      "vertices": 15432,
+      "faces": 3764,
+      "collision": true
+    },
+    {
+      "name": "School_name_Chinese_001_0_0_0",
+      "source": "School name / Chinese.001",
+      "vertices": 44818,
+      "faces": 11643,
+      "collision": false
+    },
+    {
+      "name": "School_name_English_001_0_0_0",
+      "source": "School name / English.001",
+      "vertices": 35636,
+      "faces": 9257,
+      "collision": false
+    },
+    {
+      "name": "Entrance_warning_001_0_0_0",
+      "source": "Entrance warning.001",
+      "vertices": 28092,
+      "faces": 7296,
+      "collision": false
+    },
+    {
+      "name": "Emergency_exit_signage_001_0_0_0",
+      "source": "Emergency exit signage.001",
+      "vertices": 1752,
+      "faces": 452,
+      "collision": false
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_-3_1_0",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 5340,
+      "faces": 1335,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_-2_1_0",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 4644,
+      "faces": 1161,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_-1_1_0",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 4592,
+      "faces": 1148,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_0_1_0",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 4592,
+      "faces": 1148,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_1_1_0",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 4784,
+      "faces": 1196,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_2_1_0",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 5152,
+      "faces": 1288,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_-3_1_1",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 5340,
+      "faces": 1335,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_-2_1_1",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 4644,
+      "faces": 1161,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_-1_1_1",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 4920,
+      "faces": 1230,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_0_1_1",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 4968,
+      "faces": 1242,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_1_1_1",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 4784,
+      "faces": 1196,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_2_1_1",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 5152,
+      "faces": 1288,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_-3_1_2",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 5340,
+      "faces": 1335,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_-2_1_2",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 4644,
+      "faces": 1161,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_-1_1_2",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 4920,
+      "faces": 1230,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_0_1_2",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 4968,
+      "faces": 1242,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_1_1_2",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 4784,
+      "faces": 1196,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_2_1_2",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 5152,
+      "faces": 1288,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_-3_-2_0",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 2028,
+      "faces": 507,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_-3_-1_0",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 4644,
+      "faces": 1161,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_-3_0_0",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 4920,
+      "faces": 1230,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_-3_-2_1",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 2028,
+      "faces": 507,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_-3_-1_1",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 4644,
+      "faces": 1161,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_-3_0_1",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 4920,
+      "faces": 1230,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_-3_-2_2",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 2028,
+      "faces": 507,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_-3_-1_2",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 4644,
+      "faces": 1161,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_-3_0_2",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 4920,
+      "faces": 1230,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_2_0_0",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 4968,
+      "faces": 1242,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_2_-1_0",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 4788,
+      "faces": 1197,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_2_-2_0",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 1836,
+      "faces": 459,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_2_0_1",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 4968,
+      "faces": 1242,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_2_-1_1",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 4788,
+      "faces": 1197,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_2_-2_1",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 1836,
+      "faces": 459,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_2_0_2",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 4968,
+      "faces": 1242,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_2_-1_2",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 4788,
+      "faces": 1197,
+      "collision": true
+    },
+    {
+      "name": "INTERIORS_desks_chairs_blackboards_lockers_001_2_-2_2",
+      "source": "INTERIORS | desks, chairs, blackboards, lockers.001",
+      "vertices": 1836,
+      "faces": 459,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_-4_1_0",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 765,
+      "faces": 180,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_-3_1_0",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 417,
+      "faces": 93,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_-4_1_1",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 815,
+      "faces": 191,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_-4_2_1",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 43,
+      "faces": 10,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_-3_2_1",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 15,
+      "faces": 3,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_-3_1_1",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 459,
+      "faces": 102,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_-4_1_2",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 815,
+      "faces": 191,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_-4_2_2",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 43,
+      "faces": 10,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_-3_2_2",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 15,
+      "faces": 3,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_-3_1_2",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 459,
+      "faces": 102,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_-4_1_3",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 50,
+      "faces": 11,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_-4_2_3",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 43,
+      "faces": 10,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_-3_2_3",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 15,
+      "faces": 3,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_-3_1_3",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 42,
+      "faces": 9,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_3_1_0",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 765,
+      "faces": 180,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_2_1_0",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 417,
+      "faces": 93,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_3_1_1",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 815,
+      "faces": 191,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_3_2_1",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 43,
+      "faces": 10,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_2_2_1",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 15,
+      "faces": 3,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_2_1_1",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 459,
+      "faces": 102,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_3_1_2",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 815,
+      "faces": 191,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_3_2_2",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 43,
+      "faces": 10,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_2_2_2",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 15,
+      "faces": 3,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_2_1_2",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 459,
+      "faces": 102,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_3_1_3",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 50,
+      "faces": 11,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_3_2_3",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 43,
+      "faces": 10,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_2_2_3",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 15,
+      "faces": 3,
+      "collision": true
+    },
+    {
+      "name": "STAIRS_two_external_evacuation_routes_001_2_1_3",
+      "source": "STAIRS | two external evacuation routes.001",
+      "vertices": 42,
+      "faces": 9,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_-5_-3_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 1190,
+      "faces": 260,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_-4_-3_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 3408,
+      "faces": 744,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_-3_-3_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 3488,
+      "faces": 764,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_-2_-3_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 3624,
+      "faces": 798,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_-1_-3_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 2714,
+      "faces": 587,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_0_-3_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 2430,
+      "faces": 525,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_1_-3_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 3432,
+      "faces": 750,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_2_-3_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 3488,
+      "faces": 764,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_3_-3_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 3408,
+      "faces": 744,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_4_-3_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 1198,
+      "faces": 262,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_-5_3_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 1696,
+      "faces": 370,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_-4_3_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 3408,
+      "faces": 744,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_-3_3_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 3456,
+      "faces": 756,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_-2_3_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 3408,
+      "faces": 744,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_-1_3_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 3416,
+      "faces": 746,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_0_3_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 3480,
+      "faces": 762,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_1_3_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 3408,
+      "faces": 744,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_2_3_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 3456,
+      "faces": 756,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_3_3_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 3408,
+      "faces": 744,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_4_3_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 1704,
+      "faces": 372,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_-5_0_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 1127,
+      "faces": 245,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_-5_-2_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 1104,
+      "faces": 240,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_-5_-1_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 1090,
+      "faces": 238,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_-5_1_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 1097,
+      "faces": 239,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_-5_2_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 1104,
+      "faces": 240,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_-1_-3_1",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 76,
+      "faces": 19,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_4_0_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 1127,
+      "faces": 245,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_4_-2_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 1104,
+      "faces": 240,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_4_-1_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 1090,
+      "faces": 238,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_4_1_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 1097,
+      "faces": 239,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_4_2_0",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 1104,
+      "faces": 240,
+      "collision": true
+    },
+    {
+      "name": "BOUNDARY_pillars_rusted_palisade_open_gates_001_0_-3_1",
+      "source": "BOUNDARY | pillars, rusted palisade, open gates.001",
+      "vertices": 76,
+      "faces": 19,
+      "collision": true
+    },
+    {
+      "name": "Gate_school_plaque_001_0_0_0",
+      "source": "Gate school plaque.001",
+      "vertices": 44818,
+      "faces": 11643,
+      "collision": false
+    },
+    {
+      "name": "Gate_closure_date_001_0_0_0",
+      "source": "Gate closure date.001",
+      "vertices": 33130,
+      "faces": 8605,
+      "collision": false
+    },
+    {
+      "name": "PROPS_abandoned_basketball_court_and_benches_001_0_0_2",
+      "source": "PROPS | abandoned basketball court and benches.001",
+      "vertices": 164,
+      "faces": 39,
+      "collision": true
+    },
+    {
+      "name": "PROPS_abandoned_basketball_court_and_benches_001_-2_-2_0",
+      "source": "PROPS | abandoned basketball court and benches.001",
+      "vertices": 2144,
+      "faces": 536,
+      "collision": true
+    },
+    {
+      "name": "PROPS_abandoned_basketball_court_and_benches_001_-2_0_0",
+      "source": "PROPS | abandoned basketball court and benches.001",
+      "vertices": 2144,
+      "faces": 536,
+      "collision": true
+    },
+    {
+      "name": "PROPS_abandoned_basketball_court_and_benches_001_-1_0_0",
+      "source": "PROPS | abandoned basketball court and benches.001",
+      "vertices": 11092,
+      "faces": 2756,
+      "collision": true
+    },
+    {
+      "name": "PROPS_abandoned_basketball_court_and_benches_001_-1_-2_0",
+      "source": "PROPS | abandoned basketball court and benches.001",
+      "vertices": 11092,
+      "faces": 2756,
+      "collision": true
+    },
+    {
+      "name": "PROPS_abandoned_basketball_court_and_benches_001_-2_-1_0",
+      "source": "PROPS | abandoned basketball court and benches.001",
+      "vertices": 8104,
+      "faces": 1972,
+      "collision": true
+    },
+    {
+      "name": "PROPS_abandoned_basketball_court_and_benches_001_-1_-1_0",
+      "source": "PROPS | abandoned basketball court and benches.001",
+      "vertices": 12120,
+      "faces": 2924,
+      "collision": true
+    },
+    {
+      "name": "PROPS_abandoned_basketball_court_and_benches_001_-1_-2_1",
+      "source": "PROPS | abandoned basketball court and benches.001",
+      "vertices": 84,
+      "faces": 21,
+      "collision": true
+    },
+    {
+      "name": "PROPS_abandoned_basketball_court_and_benches_001_-1_0_1",
+      "source": "PROPS | abandoned basketball court and benches.001",
+      "vertices": 84,
+      "faces": 21,
+      "collision": true
+    },
+    {
+      "name": "PROPS_abandoned_basketball_court_and_benches_001_1_-2_0",
+      "source": "PROPS | abandoned basketball court and benches.001",
+      "vertices": 1944,
+      "faces": 486,
+      "collision": true
+    },
+    {
+      "name": "PROPS_abandoned_basketball_court_and_benches_001_1_-1_0",
+      "source": "PROPS | abandoned basketball court and benches.001",
+      "vertices": 3636,
+      "faces": 909,
+      "collision": true
+    },
+    {
+      "name": "PROPS_abandoned_basketball_court_and_benches_001_1_0_0",
+      "source": "PROPS | abandoned basketball court and benches.001",
+      "vertices": 1944,
+      "faces": 486,
+      "collision": true
+    },
+    {
+      "name": "PROPS_abandoned_basketball_court_and_benches_001_0_0_0",
+      "source": "PROPS | abandoned basketball court and benches.001",
+      "vertices": 540,
+      "faces": 133,
+      "collision": true
+    },
+    {
+      "name": "PROPS_abandoned_basketball_court_and_benches_001_0_-1_0",
+      "source": "PROPS | abandoned basketball court and benches.001",
+      "vertices": 1116,
+      "faces": 279,
+      "collision": true
+    },
+    {
+      "name": "PROPS_abandoned_basketball_court_and_benches_001_0_0_1",
+      "source": "PROPS | abandoned basketball court and benches.001",
+      "vertices": 48,
+      "faces": 12,
+      "collision": true
+    },
+    {
+      "name": "Noticeboard_warning_001_0_0_0",
+      "source": "Noticeboard warning.001",
+      "vertices": 62932,
+      "faces": 16350,
+      "collision": false
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_-4_-2_0",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 7,
+      "faces": 1,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_-4_-2_2",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 363,
+      "faces": 87,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_-4_-2_1",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 172,
+      "faces": 43,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_-4_0_0",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 7,
+      "faces": 1,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_-4_0_2",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 499,
+      "faces": 121,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_-4_0_1",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 76,
+      "faces": 19,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_-4_2_0",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 7,
+      "faces": 1,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_-4_2_2",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 347,
+      "faces": 83,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_-4_2_1",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 28,
+      "faces": 7,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_-4_-1_1",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 320,
+      "faces": 80,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_-4_-1_2",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 112,
+      "faces": 28,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_-4_1_1",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 416,
+      "faces": 104,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_-4_1_2",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 16,
+      "faces": 4,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_3_-2_0",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 7,
+      "faces": 1,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_3_-2_2",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 363,
+      "faces": 87,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_3_-2_1",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 172,
+      "faces": 43,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_3_0_0",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 7,
+      "faces": 1,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_3_0_2",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 499,
+      "faces": 121,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_3_0_1",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 76,
+      "faces": 19,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_3_2_0",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 7,
+      "faces": 1,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_3_2_2",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 347,
+      "faces": 83,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_3_2_1",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 28,
+      "faces": 7,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_3_-1_1",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 320,
+      "faces": 80,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_3_-1_2",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 112,
+      "faces": 28,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_3_1_1",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 416,
+      "faces": 104,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_3_1_2",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 16,
+      "faces": 4,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_-2_-2_0",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 35,
+      "faces": 8,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_-2_-2_1",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 73,
+      "faces": 16,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_-2_-1_0",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 35,
+      "faces": 8,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_-2_-1_1",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 73,
+      "faces": 16,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_-2_0_0",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 35,
+      "faces": 8,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_-2_0_1",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 73,
+      "faces": 16,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_1_-2_0",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 35,
+      "faces": 8,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_1_-2_1",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 73,
+      "faces": 16,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_1_-1_0",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 35,
+      "faces": 8,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_1_-1_1",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 73,
+      "faces": 16,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_1_0_0",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 35,
+      "faces": 8,
+      "collision": true
+    },
+    {
+      "name": "UTILITIES_sagging_overhead_cables_and_lamps_001_1_0_1",
+      "source": "UTILITIES | sagging overhead cables and lamps.001",
+      "vertices": 73,
+      "faces": 16,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-2_-2_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 461,
+      "faces": 120,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-2_-2_1",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 465,
+      "faces": 103,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-2_-2_2",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 1251,
+      "faces": 288,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-3_-1_2",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 48,
+      "faces": 11,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-3_-2_2",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 17,
+      "faces": 4,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-2_-1_2",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 350,
+      "faces": 81,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-2_0_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 404,
+      "faces": 101,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-2_0_1",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 192,
+      "faces": 42,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-2_0_2",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 1834,
+      "faces": 420,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-2_0_3",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 105,
+      "faces": 25,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_1_-2_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 439,
+      "faces": 118,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_1_-2_1",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 64,
+      "faces": 13,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_1_-2_2",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 615,
+      "faces": 140,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_1_-1_2",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 752,
+      "faces": 171,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_1_-2_3",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 55,
+      "faces": 13,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_1_-1_3",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 315,
+      "faces": 73,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_1_-1_1",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 48,
+      "faces": 12,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_2_-1_2",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 142,
+      "faces": 33,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_2_-1_3",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 140,
+      "faces": 32,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_1_-1_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 124,
+      "faces": 36,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_1_0_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 429,
+      "faces": 104,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_1_0_1",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 894,
+      "faces": 202,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_1_0_2",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 1043,
+      "faces": 242,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_2_0_1",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 156,
+      "faces": 37,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_2_0_2",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 10,
+      "faces": 2,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-4_3_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 326,
+      "faces": 87,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-4_2_1",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 250,
+      "faces": 54,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-4_2_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 285,
+      "faces": 83,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-4_3_1",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 148,
+      "faces": 31,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-4_3_2",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 989,
+      "faces": 228,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-4_2_2",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 709,
+      "faces": 166,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-5_2_2",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 35,
+      "faces": 8,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_3_2_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 465,
+      "faces": 124,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_3_2_1",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 112,
+      "faces": 25,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_3_2_2",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 1210,
+      "faces": 275,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_3_2_3",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 469,
+      "faces": 109,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_3_3_2",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 259,
+      "faces": 59,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_3_3_3",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 81,
+      "faces": 19,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_3_3_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 203,
+      "faces": 65,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-4_-3_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 400,
+      "faces": 101,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-4_-3_1",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 112,
+      "faces": 25,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-4_-3_2",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 1427,
+      "faces": 324,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-5_-3_3",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 124,
+      "faces": 29,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-4_-3_3",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 121,
+      "faces": 29,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-5_-3_2",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 347,
+      "faces": 80,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-5_-3_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 7,
+      "faces": 1,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_3_-3_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 377,
+      "faces": 92,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_3_-3_1",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 112,
+      "faces": 25,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_3_-3_2",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 1583,
+      "faces": 362,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_4_-3_2",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 40,
+      "faces": 9,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_3_-3_3",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 25,
+      "faces": 5,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_3_-2_2",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 371,
+      "faces": 86,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-4_-1_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 219,
+      "faces": 73,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-4_0_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 234,
+      "faces": 78,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-4_-2_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 210,
+      "faces": 70,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_3_1_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 186,
+      "faces": 62,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_3_-2_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 222,
+      "faces": 74,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-4_1_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 228,
+      "faces": 76,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_3_-1_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 165,
+      "faces": 55,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-1_-3_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 51,
+      "faces": 17,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_1_1_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 84,
+      "faces": 28,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_2_-3_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 75,
+      "faces": 25,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-2_1_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 72,
+      "faces": 24,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_1_-3_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 114,
+      "faces": 38,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_2_3_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 15,
+      "faces": 5,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-2_-3_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 120,
+      "faces": 40,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-2_-1_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 129,
+      "faces": 43,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_3_0_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 207,
+      "faces": 69,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-3_-2_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 123,
+      "faces": 41,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-3_-3_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 90,
+      "faces": 30,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_2_-2_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 108,
+      "faces": 36,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-1_0_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 24,
+      "faces": 8,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-1_-2_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 78,
+      "faces": 26,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_0_-2_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 96,
+      "faces": 32,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-3_3_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 15,
+      "faces": 5,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_0_-3_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 42,
+      "faces": 14,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-1_1_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 33,
+      "faces": 11,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_0_0_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 12,
+      "faces": 4,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_4_2_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 6,
+      "faces": 2,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-5_3_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 3,
+      "faces": 1,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_0_1_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 12,
+      "faces": 4,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_2_2_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 6,
+      "faces": 2,
+      "collision": true
+    },
+    {
+      "name": "VEGETATION_skeletal_trees_roots_and_tall_weeds_001_-3_2_0",
+      "source": "VEGETATION | skeletal trees, roots and tall weeds.001",
+      "vertices": 12,
+      "faces": 4,
+      "collision": true
+    },
+    {
+      "name": "DETAIL_weeds_in_courtyard_joints_0_0_0",
+      "source": "DETAIL | weeds in courtyard joints",
+      "vertices": 1005,
+      "faces": 335,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_-1_-2_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 760,
+      "faces": 184,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_0_-2_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 326,
+      "faces": 77,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_0_-1_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 854,
+      "faces": 220,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_1_0_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 158,
+      "faces": 31,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_-1_0_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 662,
+      "faces": 169,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_1_-3_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 58,
+      "faces": 6,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_-3_-2_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 484,
+      "faces": 121,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_0_-3_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 194,
+      "faces": 37,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_0_0_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 561,
+      "faces": 151,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_3_1_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 288,
+      "faces": 80,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_2_-2_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 515,
+      "faces": 141,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_0_1_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 246,
+      "faces": 68,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_-2_-3_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 15,
+      "faces": 4,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_-3_-3_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 63,
+      "faces": 18,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_3_-2_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 109,
+      "faces": 28,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_3_-1_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 324,
+      "faces": 89,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_3_0_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 537,
+      "faces": 149,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_-1_1_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 60,
+      "faces": 16,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_1_-2_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 418,
+      "faces": 110,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_-4_-1_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 315,
+      "faces": 88,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_-2_0_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 295,
+      "faces": 78,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_-4_0_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 264,
+      "faces": 73,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_1_-1_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 135,
+      "faces": 35,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_-4_-2_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 127,
+      "faces": 34,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_-1_-1_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 81,
+      "faces": 22,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_-2_-2_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 255,
+      "faces": 67,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_-2_-1_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 295,
+      "faces": 76,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_2_-3_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 39,
+      "faces": 11,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_-2_1_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 16,
+      "faces": 4,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_1_1_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 48,
+      "faces": 12,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_3_-3_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 24,
+      "faces": 6,
+      "collision": false
+    },
+    {
+      "name": "DECAY_puddles_cracks_scattered_debris_001_-1_-3_0",
+      "source": "DECAY | puddles, cracks, scattered debris.001",
+      "vertices": 180,
+      "faces": 42,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_-3_-2_0",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 6156,
+      "faces": 1553,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_-3_-2_1",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 3330,
+      "faces": 849,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_-3_-2_2",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 1378,
+      "faces": 358,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_-4_-2_0",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 8,
+      "faces": 2,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_-3_0_3",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 1286,
+      "faces": 261,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_-3_0_4",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 472,
+      "faces": 80,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_2_-2_0",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 6798,
+      "faces": 1718,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_2_-2_1",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 2908,
+      "faces": 744,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_2_-2_2",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 1166,
+      "faces": 300,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_2_0_3",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 1286,
+      "faces": 261,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_2_0_4",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 472,
+      "faces": 80,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_1_1_2",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 996,
+      "faces": 236,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_0_1_1",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 168,
+      "faces": 42,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_1_1_0",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 456,
+      "faces": 114,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_-1_1_1",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 312,
+      "faces": 78,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_-2_1_2",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 408,
+      "faces": 102,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_0_1_2",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 48,
+      "faces": 12,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_2_1_2",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 120,
+      "faces": 30,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_-3_1_1",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 244,
+      "faces": 61,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_-2_1_1",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 212,
+      "faces": 53,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_-2_1_0",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 96,
+      "faces": 24,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_2_1_1",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 360,
+      "faces": 90,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_-3_1_0",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 120,
+      "faces": 30,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_1_1_1",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 144,
+      "faces": 36,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_-1_1_2",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 48,
+      "faces": 12,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_-1_-3_0",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 80,
+      "faces": 20,
+      "collision": false
+    },
+    {
+      "name": "DETAIL_gable_windows_fractures_ivy_and_rooftop_services_0_-3_0",
+      "source": "DETAIL | gable windows, fractures, ivy and rooftop services",
+      "vertices": 80,
+      "faces": 20,
+      "collision": false
+    },
+    {
+      "name": "MOON_over_the_abandoned_west_block_001_0_0_0",
+      "source": "MOON | over the abandoned west block.001",
+      "vertices": 4512,
+      "faces": 1152,
+      "collision": false
+    },
+    {
+      "name": "GYMNASIUM_rear_service_hall_001_0_0_0",
+      "source": "GYMNASIUM | rear service hall.001",
+      "vertices": 216,
+      "faces": 54,
+      "collision": true
+    },
+    {
+      "name": "V2_entrance_arcade_and_carved_stonework_0_0_0",
+      "source": "V2 | entrance arcade and carved stonework",
+      "vertices": 22464,
+      "faces": 5616,
+      "collision": true
+    },
+    {
+      "name": "V2_foundation_inscription_0_0_0",
+      "source": "V2 | foundation inscription",
+      "vertices": 68792,
+      "faces": 17878,
+      "collision": false
+    },
+    {
+      "name": "V2_clock_dial_and_cornices_0_0_0",
+      "source": "V2 | clock dial and cornices",
+      "vertices": 155050,
+      "faces": 37600,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-3_1_0",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 7408,
+      "faces": 1852,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-2_1_0",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 9300,
+      "faces": 2325,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-1_1_0",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 5616,
+      "faces": 1404,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_0_1_0",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 5616,
+      "faces": 1404,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_1_1_0",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 10596,
+      "faces": 2649,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_2_1_0",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 7408,
+      "faces": 1852,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-3_1_1",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 8180,
+      "faces": 2045,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_2_1_1",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 8180,
+      "faces": 2045,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-2_1_1",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 10064,
+      "faces": 2516,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-1_1_1",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 5796,
+      "faces": 1449,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_0_1_1",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 5844,
+      "faces": 1461,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_1_1_1",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 11360,
+      "faces": 2840,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-3_1_2",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 8088,
+      "faces": 2022,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_2_1_2",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 8088,
+      "faces": 2022,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-2_1_2",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 9960,
+      "faces": 2490,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-1_1_2",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 5748,
+      "faces": 1437,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_0_1_2",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 5796,
+      "faces": 1449,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_1_1_2",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 11256,
+      "faces": 2814,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-3_1_3",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 3616,
+      "faces": 897,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_2_1_3",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 3616,
+      "faces": 897,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-2_1_3",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 3408,
+      "faces": 846,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-1_1_3",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 2244,
+      "faces": 555,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_0_1_3",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 2412,
+      "faces": 597,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_1_1_3",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 3408,
+      "faces": 846,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-2_-2_0",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 3828,
+      "faces": 957,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-3_-2_0",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 780,
+      "faces": 195,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-3_-1_0",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 1428,
+      "faces": 357,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-2_-1_0",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 5916,
+      "faces": 1479,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-2_0_0",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 6336,
+      "faces": 1584,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-3_0_0",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 1556,
+      "faces": 389,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-2_-2_1",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 4096,
+      "faces": 1024,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-3_-2_1",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 956,
+      "faces": 239,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-3_-1_1",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 1664,
+      "faces": 416,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-2_-1_1",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 6268,
+      "faces": 1567,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-2_0_1",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 6596,
+      "faces": 1649,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-3_0_1",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 1728,
+      "faces": 432,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-2_-2_2",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 4124,
+      "faces": 1031,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-3_-2_2",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 916,
+      "faces": 229,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-3_-1_2",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 1604,
+      "faces": 401,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-2_-1_2",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 6184,
+      "faces": 1546,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-2_0_2",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 6528,
+      "faces": 1632,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-3_0_2",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 1680,
+      "faces": 420,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-2_-2_3",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 636,
+      "faces": 159,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-3_-2_3",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 1362,
+      "faces": 337,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-2_-1_3",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 628,
+      "faces": 157,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-3_-1_3",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 2384,
+      "faces": 590,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-2_0_3",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 440,
+      "faces": 110,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_-3_0_3",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 2220,
+      "faces": 549,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_1_0_0",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 5040,
+      "faces": 1260,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_2_0_0",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 1556,
+      "faces": 389,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_2_-1_0",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 1428,
+      "faces": 357,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_1_-1_0",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 5916,
+      "faces": 1479,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_2_-2_0",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 780,
+      "faces": 195,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_1_-2_0",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 3828,
+      "faces": 957,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_2_-2_1",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 956,
+      "faces": 239,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_1_-2_1",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 4096,
+      "faces": 1024,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_1_0_1",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 5300,
+      "faces": 1325,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_2_0_1",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 1728,
+      "faces": 432,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_2_-1_1",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 1664,
+      "faces": 416,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_1_-1_1",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 6268,
+      "faces": 1567,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_2_-2_2",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 916,
+      "faces": 229,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_1_-2_2",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 4124,
+      "faces": 1031,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_1_0_2",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 5232,
+      "faces": 1308,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_2_0_2",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 1680,
+      "faces": 420,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_2_-1_2",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 1604,
+      "faces": 401,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_1_-1_2",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 6184,
+      "faces": 1546,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_2_-2_3",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 1038,
+      "faces": 257,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_1_-2_3",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 636,
+      "faces": 159,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_1_0_3",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 440,
+      "faces": 110,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_2_0_3",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 2220,
+      "faces": 549,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_1_-1_3",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 628,
+      "faces": 157,
+      "collision": true
+    },
+    {
+      "name": "V2_facade_profiles_corbels_and_service_conduits_2_-1_3",
+      "source": "V2 | facade profiles, corbels and service conduits",
+      "vertices": 2384,
+      "faces": 590,
+      "collision": true
+    },
+    {
+      "name": "V2_gate_lanterns_masonry_joints_and_iron_scrollwork_0_0_0",
+      "source": "V2 | gate lanterns, masonry joints and iron scrollwork",
+      "vertices": 179544,
+      "faces": 43508,
+      "collision": true
+    },
+    {
+      "name": "V2_entry_fixtures_and_bronze_sign_lighting_0_0_0",
+      "source": "V2 | entry fixtures and bronze sign lighting",
+      "vertices": 3456,
+      "faces": 864,
+      "collision": true
+    },
+    {
+      "name": "V2_drains_and_planted_courtyard_edges_-1_-3_0",
+      "source": "V2 | drains and planted courtyard edges",
+      "vertices": 2844,
+      "faces": 711,
+      "collision": true
+    },
+    {
+      "name": "V2_drains_and_planted_courtyard_edges_-1_0_0",
+      "source": "V2 | drains and planted courtyard edges",
+      "vertices": 9540,
+      "faces": 2385,
+      "collision": true
+    },
+    {
+      "name": "V2_drains_and_planted_courtyard_edges_-1_-2_0",
+      "source": "V2 | drains and planted courtyard edges",
+      "vertices": 12960,
+      "faces": 3240,
+      "collision": true
+    },
+    {
+      "name": "V2_drains_and_planted_courtyard_edges_-1_-1_0",
+      "source": "V2 | drains and planted courtyard edges",
+      "vertices": 13104,
+      "faces": 3276,
+      "collision": true
+    },
+    {
+      "name": "V2_drains_and_planted_courtyard_edges_0_-3_0",
+      "source": "V2 | drains and planted courtyard edges",
+      "vertices": 2844,
+      "faces": 711,
+      "collision": true
+    },
+    {
+      "name": "V2_drains_and_planted_courtyard_edges_0_0_0",
+      "source": "V2 | drains and planted courtyard edges",
+      "vertices": 10188,
+      "faces": 2547,
+      "collision": true
+    },
+    {
+      "name": "V2_drains_and_planted_courtyard_edges_0_-2_0",
+      "source": "V2 | drains and planted courtyard edges",
+      "vertices": 12960,
+      "faces": 3240,
+      "collision": true
+    },
+    {
+      "name": "V2_drains_and_planted_courtyard_edges_0_-1_0",
+      "source": "V2 | drains and planted courtyard edges",
+      "vertices": 13104,
+      "faces": 3276,
+      "collision": true
+    },
+    {
+      "name": "V2_drains_and_planted_courtyard_edges_-2_-2_0",
+      "source": "V2 | drains and planted courtyard edges",
+      "vertices": 9156,
+      "faces": 2289,
+      "collision": true
+    },
+    {
+      "name": "V2_drains_and_planted_courtyard_edges_-2_-1_0",
+      "source": "V2 | drains and planted courtyard edges",
+      "vertices": 10368,
+      "faces": 2592,
+      "collision": true
+    },
+    {
+      "name": "V2_drains_and_planted_courtyard_edges_-2_0_0",
+      "source": "V2 | drains and planted courtyard edges",
+      "vertices": 11148,
+      "faces": 2787,
+      "collision": true
+    },
+    {
+      "name": "V2_drains_and_planted_courtyard_edges_1_-2_0",
+      "source": "V2 | drains and planted courtyard edges",
+      "vertices": 9156,
+      "faces": 2289,
+      "collision": true
+    },
+    {
+      "name": "V2_drains_and_planted_courtyard_edges_1_-1_0",
+      "source": "V2 | drains and planted courtyard edges",
+      "vertices": 10368,
+      "faces": 2592,
+      "collision": true
+    },
+    {
+      "name": "V2_drains_and_planted_courtyard_edges_1_0_0",
+      "source": "V2 | drains and planted courtyard edges",
+      "vertices": 11148,
+      "faces": 2787,
+      "collision": true
+    },
+    {
+      "name": "V2_abandoned_bicycles_and_rack_0_0_0",
+      "source": "V2 | abandoned bicycles and rack",
+      "vertices": 248482,
+      "faces": 60497,
+      "collision": true
+    },
+    {
+      "name": "V2_small_mechanical_and_courtyard_details_-2_-2_0",
+      "source": "V2 | small mechanical and courtyard details",
+      "vertices": 9056,
+      "faces": 2218,
+      "collision": true
+    },
+    {
+      "name": "V2_small_mechanical_and_courtyard_details_-2_-1_0",
+      "source": "V2 | small mechanical and courtyard details",
+      "vertices": 4104,
+      "faces": 1008,
+      "collision": true
+    },
+    {
+      "name": "V2_small_mechanical_and_courtyard_details_-2_0_0",
+      "source": "V2 | small mechanical and courtyard details",
+      "vertices": 4104,
+      "faces": 1008,
+      "collision": true
+    },
+    {
+      "name": "V2_small_mechanical_and_courtyard_details_1_-2_0",
+      "source": "V2 | small mechanical and courtyard details",
+      "vertices": 4104,
+      "faces": 1008,
+      "collision": true
+    },
+    {
+      "name": "V2_small_mechanical_and_courtyard_details_1_-1_0",
+      "source": "V2 | small mechanical and courtyard details",
+      "vertices": 4104,
+      "faces": 1008,
+      "collision": true
+    },
+    {
+      "name": "V2_small_mechanical_and_courtyard_details_1_0_0",
+      "source": "V2 | small mechanical and courtyard details",
+      "vertices": 9056,
+      "faces": 2218,
+      "collision": true
+    },
+    {
+      "name": "V2_small_mechanical_and_courtyard_details_-3_1_1",
+      "source": "V2 | small mechanical and courtyard details",
+      "vertices": 18358,
+      "faces": 4453,
+      "collision": true
+    },
+    {
+      "name": "V2_small_mechanical_and_courtyard_details_-2_1_1",
+      "source": "V2 | small mechanical and courtyard details",
+      "vertices": 18358,
+      "faces": 4453,
+      "collision": true
+    },
+    {
+      "name": "V2_small_mechanical_and_courtyard_details_0_1_1",
+      "source": "V2 | small mechanical and courtyard details",
+      "vertices": 18358,
+      "faces": 4453,
+      "collision": true
+    },
+    {
+      "name": "V2_small_mechanical_and_courtyard_details_2_1_1",
+      "source": "V2 | small mechanical and courtyard details",
+      "vertices": 18358,
+      "faces": 4453,
+      "collision": true
+    }
+  ],
+  "labels": [
+    {
+      "name": "School name / Chinese.001",
+      "text": "鹅 企 中 学"
+    },
+    {
+      "name": "School name / English.001",
+      "text": "EQI MIDDLE SCHOOL"
+    },
+    {
+      "name": "Entrance warning.001",
+      "text": "禁止入内"
+    },
+    {
+      "name": "Emergency exit signage.001",
+      "text": "EXIT"
+    },
+    {
+      "name": "Gate school plaque.001",
+      "text": "鹅企中学"
+    },
+    {
+      "name": "Gate closure date.001",
+      "text": "CLOSED  /  KEEP OUT"
+    },
+    {
+      "name": "Noticeboard warning.001",
+      "text": "失 踪  /  MISSING"
+    },
+    {
+      "name": "V2 | foundation inscription",
+      "text": "创 立 于 1 9 8 7 年"
+    }
+  ]
+}

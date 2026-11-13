@@ -1,0 +1,76 @@
+{
+  "results": [
+    {
+      "name": "Walking produces no audible detection",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "Walking has no footstep audio",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "C toggles crouch after release",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "Crouch walking is silent",
+      "passed": true,
+      "detail": 0.0
+    },
+    {
+      "name": "Second C toggles standing",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "Running creates a small audible cue",
+      "passed": true,
+      "detail": 83.96767
+    },
+    {
+      "name": "Silent bedroom blocks visual targeting",
+      "passed": true,
+      "detail": "(-1.91, 0.02, 3.43)"
+    },
+    {
+      "name": "Walked continuously from ground to attic",
+      "passed": true,
+      "detail": "(14.65, 6.63, 0.95)"
+    },
+    {
+      "name": "Door opens away from inside player",
+      "passed": true,
+      "detail": 95.0
+    },
+    {
+      "name": "Door reverses swing from outside",
+      "passed": true,
+      "detail": -95.0
+    },
+    {
+      "name": "No headboard remains",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "name": "DV uses Lit world light layers",
+      "passed": true,
+      "detail": 7
+    },
+    {
+      "name": "No artificial hand softbox",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "name": "No runtime errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "duration": 21.7825012
+}

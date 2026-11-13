@@ -1,0 +1,165 @@
+{
+  "runtime_checks": [
+    {
+      "name": "Player loop advances",
+      "passed": true,
+      "detail": 494
+    },
+    {
+      "name": "Door lamp visibly flickers",
+      "passed": true,
+      "detail": {
+        "minLamp": 0.48,
+        "maxLamp": 5.99584055
+      }
+    },
+    {
+      "name": "Settings opens",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Settings apply",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Settings closes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Start loads house",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "One dim bedroom light",
+      "passed": true,
+      "detail": [
+        {
+          "name": "Tuned practical lamp",
+          "enabled": false,
+          "intensity": 1.05
+        },
+        {
+          "name": "Bedroom ceiling lamp",
+          "enabled": true,
+          "intensity": 0.38
+        },
+        {
+          "name": "Bedroom window spill",
+          "enabled": false,
+          "intensity": 2.2
+        }
+      ]
+    },
+    {
+      "name": "Quilt exists",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Empty slots have no text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All item image assets load",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Map has distributed batteries",
+      "passed": true,
+      "detail": [
+        "(5.40, -2.96, -11.50)",
+        "(-3.80, 3.34, -3.20)",
+        "(4.40, 3.34, 3.30)",
+        "(4.85, 0.04, 5.20)",
+        "(-3.22, 0.04, 4.90)",
+        "(-3.50, 0.04, -4.70)",
+        "(7.90, 0.04, 0.10)",
+        "(14.90, 0.04, -5.50)"
+      ]
+    },
+    {
+      "name": "Battery pickup increments count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Picked battery temporarily hidden",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Battery supply restocks",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Pickup images and battery UI update",
+      "passed": true,
+      "detail": "备用电池 × 3    DV 电量 100%"
+    },
+    {
+      "name": "Q shows no trajectory",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Q drops selected objective",
+      "passed": false,
+      "detail": null
+    },
+    {
+      "name": "Q preserves DV and batteries",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Permanent equipment survives death",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Checkpoint saved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Continue restores position",
+      "passed": true,
+      "detail": {
+        "saved": "(-4.58, 0.02, 5.10)",
+        "restored": "(-4.58, 0.02, 5.10)"
+      }
+    },
+    {
+      "name": "Continue restores key and equipment",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Continue skips opening wake",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No runtime errors",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "drop_input_atomic_check": {
+    "selected": 3,
+    "charging": true,
+    "noTrajectory": true,
+    "dropped": true,
+    "equipmentRetained": true,
+    "passed": true
+  },
+  "note": "The background-window input check did not dispatch the synthetic Q event. The isolated inventory input check explicitly advanced Input System Dynamic input and verified slot selection, Q charging, release/drop, no trajectory and retained equipment.",
+  "passed": true
+}
