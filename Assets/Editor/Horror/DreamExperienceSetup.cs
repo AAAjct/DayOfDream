@@ -321,16 +321,29 @@ namespace DayOfDream.Editor
             var rect = panel.GetComponent<RectTransform>(); rect.anchorMin = Vector2.zero; rect.anchorMax = Vector2.one; rect.offsetMin = rect.offsetMax = Vector2.zero;
             panel.GetComponent<Image>().color = new Color(.015f,.023f,.029f,.98f);
             Text(panel.transform,"设置",new Vector2(160,-150),new Vector2(800,100),64);
-            Text(panel.transform,"主音量",new Vector2(170,-350),new Vector2(300,60),28);
-            Text(panel.transform,"鼠标灵敏度",new Vector2(170,-510),new Vector2(300,60),28);
-            var volume = Slider(panel.transform,"Volume",new Vector2(520,-377),0,1);
-            var sensitivity = Slider(panel.transform,"Sensitivity",new Vector2(520,-537),.25f,2.5f);
+            Text(panel.transform,"主音量",new Vector2(170,-310),new Vector2(300,60),28);
+            Text(panel.transform,"鼠标灵敏度",new Vector2(170,-410),new Vector2(300,60),28);
+            var volume = Slider(panel.transform,"Volume",new Vector2(520,-337),0,1);
+            var sensitivity = Slider(panel.transform,"Sensitivity",new Vector2(520,-437),.25f,2.5f);
+            var (frameRate, vSync) = AddDisplaySettings(panel.transform);
             var back = Button(panel.transform,"返回",new Vector2(160,-740));
             var config = new SerializedObject(controller);
             void Set(string name,Object value) => config.FindProperty(name).objectReferenceValue = value;
             Set("startButton",start); Set("continueButton",resume); Set("settingsButton",settings); Set("quitButton",quit);
             Set("backButton",back); Set("settingsPanel",panel); Set("volumeSlider",volume); Set("sensitivitySlider",sensitivity);
+            Set("frameRateButton",frameRate); Set("vSyncButton",vSync);
             config.ApplyModifiedPropertiesWithoutUndo(); panel.SetActive(false);
+        }
+
+        private static (Button frameRate, Button vSync) AddDisplaySettings(Transform panel)
+        {
+            Text(panel, "帧率限制", new Vector2(170, -510), new Vector2(300, 60), 28);
+            Text(panel, "垂直同步", new Vector2(170, -610), new Vector2(300, 60), 28);
+            var frameRate = Button(panel, "120 FPS", new Vector2(520, -503), 250);
+            var vSync = Button(panel, "关闭", new Vector2(520, -603), 250);
+            frameRate.name = "Frame rate limit";
+            vSync.name = "Vertical sync";
+            return (frameRate, vSync);
         }
 
         private static TMP_Text Text(Transform parent,string text,Vector2 position,Vector2 size,float fontSize)
@@ -387,12 +400,13 @@ namespace DayOfDream.Editor
             var rect = image.rectTransform;
             var colors = button.colors;
             colors.normalColor = new Color(.13f, .078f, .087f, .93f);
-            colors.selectedColor = new Color(.29f, .09f, .112f, .98f);
-            colors.highlightedColor = colors.selectedColor;
+            colors.selectedColor = colors.normalColor;
+            colors.highlightedColor = new Color(.29f, .09f, .112f, .98f);
             colors.pressedColor = new Color(.46f, .13f, .14f);
             colors.disabledColor = new Color(.075f, .059f, .066f, .78f);
             colors.fadeDuration = .18f;
             button.colors = colors;
+            button.navigation = new Navigation { mode = Navigation.Mode.None };
             var caption = Text(rect, label, new Vector2(55, -7), new Vector2(width - 90, 51), 30);
             caption.characterSpacing = 6;
             caption.alignment = TextAlignmentOptions.MidlineLeft;

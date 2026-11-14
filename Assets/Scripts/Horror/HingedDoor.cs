@@ -10,6 +10,7 @@ namespace DayOfDream.Horror
         private Rigidbody hinge;
         private Quaternion closedRotation;
         private float swingAngle;
+        private bool fastOpening;
         [SerializeField, Min(.01f)] private float leafWidth = 1.64f;
         public bool IsOpen { get; private set; }
         public void Configure(float angle, HingedDoor other) { openAngle = angle; pairedLeaf = other; }
@@ -17,17 +18,27 @@ namespace DayOfDream.Horror
         public void Toggle()
         {
             bool next = !IsOpen;
+            fastOpening = false;
             IsOpen = next;
-            if (pairedLeaf != null) pairedLeaf.IsOpen = next;
+            if (pairedLeaf != null)
+            {
+                pairedLeaf.fastOpening = false;
+                pairedLeaf.IsOpen = next;
+            }
         }
-        public void Toggle(Vector3 actor)
+
+        public void Toggle(Vector3 actor) => Toggle(actor, false);
+
+        internal void Toggle(Vector3 actor, bool forceOpen)
         {
             bool opening = !IsOpen;
             if (opening) ChooseSwing(actor);
+            fastOpening = opening && forceOpen;
             IsOpen = opening;
             if (pairedLeaf != null)
             {
                 if (opening) pairedLeaf.ChooseSwing(actor);
+                pairedLeaf.fastOpening = fastOpening;
                 pairedLeaf.IsOpen = opening;
             }
         }
@@ -56,7 +67,8 @@ namespace DayOfDream.Horror
         private void FixedUpdate()
         {
             Quaternion target = closedRotation * Quaternion.Euler(0, IsOpen ? swingAngle : 0, 0);
-            hinge.MoveRotation(Quaternion.RotateTowards(hinge.rotation, target, 135 * Time.fixedDeltaTime));
+            float degreesPerSecond = fastOpening ? 480f : 135f;
+            hinge.MoveRotation(Quaternion.RotateTowards(hinge.rotation, target, degreesPerSecond * Time.fixedDeltaTime));
         }
     }
 }

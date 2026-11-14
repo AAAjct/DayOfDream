@@ -1,5 +1,6 @@
 """Blender MCP entry point for the authored house shell and its trim."""
 import json
+from math import floor
 from pathlib import Path
 
 import bpy
@@ -132,7 +133,20 @@ def finish_architecture(project, groups):
                 obj.location.z += .003
     bpy.context.preferences.filepaths.save_version = 0
     bpy.ops.wm.save_as_mainfile(filepath=str(project / "SourceArt/AnonHouse.blend"), compress=True)
-    for name, objects in groups.items():
+    export_architecture(project, groups)
+
+
+def export_architecture(project, groups):
+    chunks = {}
+    for material, objects in groups.items():
+        for obj in objects:
+            x, z, y = obj.location
+            name = obj.name.split(".")[0]
+            # 大块墙体和楼板单独分组，避免细小装饰作为遮挡物参与烘焙。
+            solid = structural_surface(name) and sorted(obj.dimensions)[1] >= 1.25
+            key = material, floor(x / 5), floor(y / 3), floor(z / 5), solid
+            chunks.setdefault(key, []).append(obj)
+    for (material, x, y, z, solid), objects in chunks.items():
         bpy.ops.object.select_all(action="DESELECT")
         for obj in objects:
             obj.select_set(True)
@@ -140,10 +154,11 @@ def finish_architecture(project, groups):
         bpy.ops.object.convert(target="MESH")
         if len(objects) > 1:
             bpy.ops.object.join()
-        bpy.context.object.name = name
+        kind = "Occluder" if solid else "Detail"
+        bpy.context.object.name = f"{kind} {x} {y} {z} - {material}"
     bpy.ops.export_scene.fbx(filepath=str(project / "Assets/Art/Environment/AnonHouse/HouseArchitecture.fbx"), object_types={"MESH"},
                              axis_forward="-Z", axis_up="Y", bake_anim=False)
-    print(f"Exported {sum(len(parts) for parts in groups.values())} house pieces across {len(groups)} material groups.")
+    print(f"Exported {sum(len(parts) for parts in groups.values())} house pieces across {len(chunks)} render chunks.")
 
 
 def add_details(groups):

@@ -25,7 +25,9 @@ namespace DayOfDream.Horror
         private int searchStep;
         private bool sawPlayer;
         private bool pursuing;
-        private AnimationState playing, idle, walk, run, attack;
+        private float lastVisualContact = float.NegativeInfinity;
+        private AnimationState playing, idle, walk, run, attack, bedAttack, wardrobeAttack, execution;
+        private float extractionDuration, extractionTime;
 
         private void Awake()
         {
@@ -38,6 +40,8 @@ namespace DayOfDream.Horror
                 walk = motion["ClubWalk"] ?? motion["Walk"];
                 run = motion["ClubRun"] ?? motion["Run"];
                 attack = motion["ClubAttack"] ?? motion["Attack"];
+                bedAttack = motion["BedExtraction"];
+                wardrobeAttack = motion["WardrobeExtraction"];
             }
             if (idle == null || walk == null || run == null || attack == null)
             {
@@ -47,6 +51,8 @@ namespace DayOfDream.Horror
             }
             motion.cullingType = AnimationCullingType.AlwaysAnimate;
             attack.wrapMode = WrapMode.ClampForever;
+            if (bedAttack != null) bedAttack.wrapMode = WrapMode.ClampForever;
+            if (wardrobeAttack != null) wardrobeAttack.wrapMode = WrapMode.ClampForever;
         }
 
         internal bool CanSeePlayer
@@ -68,7 +74,7 @@ namespace DayOfDream.Horror
 
         internal void Hear(Vector3 point, float radius)
         {
-            if (playing == attack || (transform.position - point).sqrMagnitude > radius * radius) return;
+            if (execution != null || (transform.position - point).sqrMagnitude > radius * radius) return;
             if (bedroom.Contains(point)) bedroomAccessUntil = Time.time + 15;
             if (pursuing) return;
             if (!NavMesh.SamplePosition(point, out var hit, 1.7f, agent.areaMask)) return;
@@ -81,6 +87,9 @@ namespace DayOfDream.Horror
             sawPlayer = false;
         }
 
+        internal bool NoticesHiding(Vector3 entrance) => CanSeePlayer ||
+            (Time.time - lastVisualContact < 2f && (lastPlayerPosition - entrance).sqrMagnitude < 3f * 3f);
+
         internal void ResetPatrol()
         {
             if (!isActiveAndEnabled || !agent.isOnNavMesh) return;
@@ -89,6 +98,8 @@ namespace DayOfDream.Horror
             waypoint = 1;
             alertUntil = nextThink = nextStep = bedroomAccessUntil = 0;
             pursuing = sawPlayer = false;
+            lastVisualContact = float.NegativeInfinity;
+            execution = null;
             searchUntil = 0;
             searchStep = 0;
             Play(idle, 0);
@@ -103,9 +114,9 @@ namespace DayOfDream.Horror
                 if (playing != null) playing.speed = 0;
                 return;
             }
-            if (attack != null && playing == attack)
+            if (execution != null)
             {
-                attack.speed = 1;
+                execution.speed = 1;
                 UpdateAttack();
                 return;
             }
@@ -117,8 +128,26 @@ namespace DayOfDream.Horror
                 return;
             }
             Vector3 destination = Time.time < alertUntil ? lastSeen : patrol[waypoint].position;
+            var exposed = house.ExposedHidingSpot;
             if (alertUntil == 0 && Time.time < searchUntil && (agent.hasPath || agent.pathPending))
                 destination = agent.destination;
+            if (exposed != null)
+            {
+                Vector3 entrance = exposed.Outside.position;
+                Vector3 approach = entrance + exposed.Outside.forward * .7f;
+                destination = NavMesh.SamplePosition(approach, out var navPoint, .9f, agent.areaMask) ? navPoint.position : entrance;
+                // Keep bedroom access while pursuing a known hiding place.
+                if (bedroom.Contains(entrance)) bedroomAccessUntil = Time.time + 3f;
+                Vector3 offset = transform.position - entrance;
+                if (house.IsReadyForExtraction && offset.sqrMagnitude < 1.25f * 1.25f && Mathf.Abs(offset.y) < .65f &&
+                    Vector3.Dot(offset, exposed.Outside.forward) > -.1f && !agent.Raycast(destination, out _))
+                {
+                    bool bed = exposed.Type == HouseObject.Kind.HideUnderBed;
+                    AnimationState clip = bed ? bedAttack : wardrobeAttack;
+                    BeginAttack(entrance - transform.position, clip ?? attack, bed ? 1.38f : 1.48f);
+                    return;
+                }
+            }
             foreach (var door in doors)
             {
                 if (door == null || (Time.time >= bedroomAccessUntil && !bedroom.Contains(transform.position) &&
@@ -129,19 +158,21 @@ namespace DayOfDream.Horror
             Vector3 facing = Vector3.ProjectOnPlane(contact, Vector3.up);
             if (house.CanHunt && facing.sqrMagnitude < 1.16f * 1.16f && Mathf.Abs(contact.y) < .65f && CanSeePlayer)
             {
-                agent.isStopped = true;
-                if (facing.sqrMagnitude > .001f) transform.rotation = Quaternion.LookRotation(facing);
-                house.BeginExecution();
-                struck = false;
-                Play(attack, .07f);
+                BeginAttack(facing, attack, 0);
                 return;
             }
             if (Time.time >= nextThink)
             {
                 nextThink = Time.time + .16f;
-                Think();
+                if (exposed == null) Think();
+                else
+                {
+                    agent.isStopped = false;
+                    agent.speed = 3.85f;
+                    if (!agent.pathPending && (!agent.hasPath || (agent.destination - destination).sqrMagnitude > .08f))
+                        agent.SetDestination(destination);
+                }
             }
-            if (playing == attack) return;
             float speed = agent.velocity.magnitude;
             bool running = speed > 2.4f;
             Play(speed < .12f ? idle : running ? run : walk, .16f);
@@ -163,22 +194,60 @@ namespace DayOfDream.Horror
             playing = state;
         }
 
+        private void BeginAttack(Vector3 facing, AnimationState clip, float extraction)
+        {
+            agent.isStopped = true;
+            facing.y = 0;
+            if (facing.sqrMagnitude > .001f) transform.rotation = Quaternion.LookRotation(facing);
+            if (extraction > 0) house.StartExecution(true);
+            else house.BeginExecution();
+            execution = clip;
+            extractionDuration = extraction;
+            extractionTime = 0;
+            struck = false;
+            Play(clip, .07f);
+            if (extraction > 0 && clip == attack) clip.speed = 0;
+        }
+
         private void UpdateAttack()
         {
-            player.FrameExecution(transform.position, attack.time);
-            if (!struck && attack.time >= 1.95f)
+            if (extractionTime < extractionDuration)
+            {
+                bool fallback = execution == attack;
+                if (fallback)
+                {
+                    execution.speed = 0;
+                    execution.time = 0;
+                }
+                extractionTime = Mathf.Min(extractionDuration, fallback ? extractionTime + Time.deltaTime : execution.time);
+                house.FrameExtraction(transform.position, extractionTime, extractionDuration);
+                if (extractionTime >= extractionDuration)
+                {
+                    player.PlayExecutionAudio();
+                    if (!fallback)
+                    {
+                        execution = attack;
+                        Play(attack, .06f);
+                    }
+                }
+                return;
+            }
+            float time = execution.time;
+            player.FrameExecution(transform.position, time);
+            if (!struck && time >= 1.95f)
             {
                 struck = true;
                 if (impact != null) footsteps.PlayOneShot(impact, .9f);
             }
-            if (attack.normalizedTime < .999f) return;
+            if (execution.normalizedTime < .999f) return;
             house.FinishExecution();
+            execution = null;
             Play(idle, .16f);
         }
 
         private void OnDisable()
         {
-            if (playing != null && playing == attack && player != null) player.StopExecutionAudio();
+            if (execution != null && player != null) player.StopExecutionAudio();
         }
 
         private void Think()
@@ -188,6 +257,7 @@ namespace DayOfDream.Horror
             if (sees)
             {
                 Vector3 position = player.transform.position;
+                lastVisualContact = Time.time;
                 Vector3 movement = Vector3.ProjectOnPlane(position - lastPlayerPosition, Vector3.up);
                 if (!sawPlayer || movement.sqrMagnitude > .004f)
                     searchHeading = sawPlayer ? movement.normalized : (position - transform.position).normalized;

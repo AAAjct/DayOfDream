@@ -192,10 +192,6 @@ namespace DayOfDream.Editor
             DoorwayX("Bathroom Door",1.4f,-3.4f,y,-7,0);
             DoorwayZ("Library Guest Connecting Door",0,-4.5f,y,-7,-1.4f);
             DoorwayZ("Master Bathroom Connecting Door",0,5.2f,y,1.4f,10);
-            RoomLabel("二楼 · 图书室",new(-1.26f,y+2.48f,3.4f),-90);
-            RoomLabel("二楼 · 客房",new(-1.26f,y+2.48f,-3.4f),-90);
-            RoomLabel("二楼 · 主卧",new(1.26f,y+2.48f,3.4f),90);
-            RoomLabel("二楼 · 盥洗室",new(1.26f,y+2.48f,-3.4f),90);
             Bookshelf(new(-6.50f,y,3.8f),90,2.3f);
             Bookshelf(new(-4.3f,y,6.55f),180,2.7f);
             Table(new(-4.1f,y,3.25f),0);
@@ -249,7 +245,6 @@ namespace DayOfDream.Editor
             for(int i=0;i<4;i++)Box("Attic covered trunk",new(5.2f+i*.9f,y+.38f,-5.8f),new(.75f,.76f,.62f),i%2==0?cloth:oak,true,decor);
             foreach(var p in new[]{new Vector3(1.5f,y+2.8f,4.5f),new(1.5f,y+2.8f,-4.5f),new(-4,y+2.1f,3.4f),new(6,y+2.1f,-3.4f)})
                 LightFixture(p,new Color(.78f,.84f,1),20,8);
-            RoomLabel("阁楼 · 档案与储物",new(1.5f,y+2.35f,5.9f),180);
             Mark("Attic West Interior",new(-3.8f,y+.05f,2.8f));
             Mark("Attic East Interior",new(6.2f,y+.05f,-2.8f));
             Mark("Attic Central Aisle",new(1.5f,y+.05f,-3.5f));
@@ -293,21 +288,22 @@ namespace DayOfDream.Editor
                 float x=i%2==0?-10.4f:18.6f,z=-16+i/2*8;
                 Tree(new(x,0,z),i);
             }
-            for(int i=0;i<3;i++)Bench(new(-5.2f+i*5.3f,0,11.8f));
-            Box("Courtyard fountain plinth",new(5, .22f,10.6f),new(2.5f,.44f,2.5f),stone);
+            Bench(new(-5.2f,0,11.8f), 1);
+            Bench(new(.1f,0,11.8f), 2);
+            var fountain = FurnishingRoot("Courtyard fountain", new(5,0,10.6f), structure);
+            Box("Courtyard fountain plinth",new(5, .22f,10.6f),new(2.5f,.44f,2.5f),stone,true,fountain);
             for(int i=0;i<4;i++)
             {
                 float angle=i*90;
-                var p=Box("Fountain stone rim",new Vector3(5,.61f,10.6f)+Quaternion.Euler(0,angle,0)*new Vector3(0,0,1.1f),new(2.4f,.35f,.22f),stone);
+                var p=Box("Fountain stone rim",new Vector3(5,.61f,10.6f)+Quaternion.Euler(0,angle,0)*new Vector3(0,0,1.1f),new(2.4f,.35f,.22f),stone,true,fountain);
                 p.transform.rotation=Quaternion.Euler(0,angle,0);
             }
-            Box("Still dark fountain water",new(5,.52f,10.6f),new(2.1f,.025f,2.1f),metal,false);
+            Box("Still dark fountain water",new(5,.52f,10.6f),new(2.1f,.025f,2.1f),metal,false,fountain);
             foreach(var p in new[]{new Vector3(-10,2.8f,10),new(18.8f,2.8f,10),new(-10,2.8f,-15),new(18.8f,2.8f,-15)})
             {
                 Box("Courtyard lamp post",p-Vector3.up*1.4f,new(.09f,2.8f,.09f),metal);
                 LightFixture(p,new Color(.64f,.77f,1),35,11);
             }
-            RoomLabel("外院",new(7.18f,2.46f,4.6f),90);
             Mark("Courtyard Kitchen Terrace",new(9.2f,.05f,4.6f));
             Mark("Courtyard Fountain",new(5,.05f,8.7f));
             Mark("Courtyard South",new(4,.05f,-17));
@@ -402,10 +398,11 @@ namespace DayOfDream.Editor
         private static void Bathtub(Vector3 p)
         {
             var ceramic=Load("Ivory Ceramic");
-            Box("Bathtub base",p+Vector3.up*.16f,new(2.35f,.25f,1.12f),ceramic,true,decor);
-            foreach(float side in new[]{-1f,1f})Box("Bathtub long rim",p+new Vector3(0,.52f,side*.51f),new(2.35f,.53f,.13f),ceramic,true,decor);
-            foreach(float side in new[]{-1f,1f})Box("Bathtub end rim",p+new Vector3(side*1.10f,.52f,0),new(.15f,.53f,1.12f),ceramic,true,decor);
-            Box("Tap",p+new Vector3(1.07f,.85f,0),new(.13f,.24f,.09f),brass,false,decor);
+            var root = FurnishingRoot("Bathtub", p, decor);
+            Box("Bathtub base",p+Vector3.up*.16f,new(2.35f,.25f,1.12f),ceramic,true,root);
+            foreach(float side in new[]{-1f,1f})Box("Bathtub long rim",p+new Vector3(0,.52f,side*.51f),new(2.35f,.53f,.13f),ceramic,true,root);
+            foreach(float side in new[]{-1f,1f})Box("Bathtub end rim",p+new Vector3(side*1.10f,.52f,0),new(.15f,.53f,1.12f),ceramic,true,root);
+            Box("Tap",p+new Vector3(1.07f,.85f,0),new(.13f,.24f,.09f),brass,false,root);
         }
         private static void Window(Vector3 p,float yaw)
         {
@@ -438,22 +435,20 @@ namespace DayOfDream.Editor
                 Beam("Bare branch",a,b,.08f,oak);
             }
         }
-        private static void Bench(Vector3 p)
+        private static void Bench(Vector3 p, int number)
         {
-            Box("Courtyard bench seat",p+Vector3.up*.48f,new(2.4f,.12f,.58f),timber,true,decor);
-            Box("Courtyard bench back",p+new Vector3(0,.89f,.26f),new(2.4f,.64f,.10f),oak,true,decor);
-            foreach(float x in new[]{-.85f,.85f})Box("Bench leg",p+new Vector3(x,.23f,0),new(.13f,.46f,.45f),metal,true,decor);
+            var root = FurnishingRoot($"Courtyard bench {number:00}", p, decor);
+            Box("Courtyard bench seat",p+Vector3.up*.48f,new(2.4f,.12f,.58f),timber,true,root).tag = "Glide";
+            Box("Courtyard bench back",p+new Vector3(0,.89f,.26f),new(2.4f,.64f,.10f),oak,true,root);
+            foreach(float x in new[]{-.85f,.85f})Box("Bench leg",p+new Vector3(x,.23f,0),new(.13f,.46f,.45f),metal,true,root);
         }
-        private static void RoomLabel(string text,Vector3 p,float yaw)
+
+        private static Transform FurnishingRoot(string name, Vector3 position, Transform parent)
         {
-            var go=new GameObject("Room plaque "+text,typeof(TMPro.TextMeshPro));go.transform.SetParent(decor,false);
-            var label=go.GetComponent<TMPro.TextMeshPro>();
-            label.rectTransform.anchoredPosition3D=decor.InverseTransformPoint(p);
-            go.transform.rotation=Quaternion.Euler(0,yaw,0);
-            label.font=AssetDatabase.LoadAssetAtPath<TMPro.TMP_FontAsset>("Assets/Art/UI/Fonts/SchoolChinese SDF.asset");
-            label.text=text;label.fontSize=2.5f;label.alignment=TMPro.TextAlignmentOptions.Center;
-            label.rectTransform.sizeDelta=new Vector2(2.7f,.35f);label.color=new Color(.80f,.76f,.65f);
-            label.renderer.shadowCastingMode=ShadowCastingMode.Off;
+            var root = new GameObject(name).transform;
+            root.SetParent(parent, false);
+            root.position = position;
+            return root;
         }
         private static Transform Mark(string name,Vector3 p)
         {
@@ -518,8 +513,6 @@ namespace DayOfDream.Editor
             moon.transform.rotation=Quaternion.Euler(43,-32,0);var light=moon.GetComponent<Light>();
             light.type=LightType.Directional;light.intensity=.24f;light.color=new Color(.55f,.68f,1);
             light.shadows=LightShadows.Soft;light.shadowBias=.035f;light.shadowNormalBias=.12f;
-            foreach(var point in decor.GetComponentsInChildren<Light>())
-                if(point.name=="Architectural lamp"){point.shadows=LightShadows.Hard;point.shadowBias=.04f;point.shadowNormalBias=.12f;}
             EditorSceneManager.SaveScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene());AssetDatabase.SaveAssets();
         }
 

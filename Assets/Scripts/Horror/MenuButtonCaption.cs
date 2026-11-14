@@ -6,21 +6,21 @@ using UnityEngine.UI;
 namespace DayOfDream.Horror
 {
     [RequireComponent(typeof(Button))]
-    public sealed class MenuButtonCaption : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,
-        ISelectHandler, IDeselectHandler
+    public sealed class MenuButtonCaption : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         [SerializeField] private Graphic accent, seal;
         private Button button;
         private TMP_Text caption;
         private Vector2 captionPosition;
-        private bool hovered, selected;
+        private bool hovered;
         private float glow = -1;
 
         private void Awake()
         {
             button = GetComponent<Button>();
+            button.navigation = new Navigation { mode = Navigation.Mode.None };
             var colors = button.colors;
-            colors.highlightedColor = colors.selectedColor;
+            colors.selectedColor = colors.normalColor;
             button.colors = colors;
             caption = GetComponentInChildren<TMP_Text>();
             captionPosition = caption.rectTransform.anchoredPosition;
@@ -29,13 +29,12 @@ namespace DayOfDream.Horror
         private void OnEnable()
         {
             hovered = false;
-            selected = EventSystem.current != null && EventSystem.current.currentSelectedGameObject == gameObject;
             glow = -1;
         }
 
         private void Update()
         {
-            float target = button.interactable && (hovered || selected) ? 1 : 0;
+            float target = button.interactable && hovered ? 1 : 0;
             if (glow == target) return;
             glow = Mathf.MoveTowards(Mathf.Max(0, glow), target, Time.unscaledDeltaTime * 6);
             caption.color = button.interactable
@@ -49,7 +48,5 @@ namespace DayOfDream.Horror
 
         public void OnPointerEnter(PointerEventData eventData) => hovered = true;
         public void OnPointerExit(PointerEventData eventData) => hovered = false;
-        public void OnSelect(BaseEventData eventData) => selected = true;
-        public void OnDeselect(BaseEventData eventData) => selected = false;
     }
 }

@@ -11,6 +11,7 @@ namespace DayOfDream.Horror
         [SerializeField] private GameObject[] hideWhileFilming;
         private InteractionReticle reticle;
         private GameObject reticleRoot;
+        private DreamPauseMenu pauseMenu;
         private readonly Image[] inventorySlots = new Image[4];
         private readonly Image[] inventoryIcons = new Image[4];
         private static readonly string[] IconNames = { "CabinetKey", "ExitKey", "Fuse", "Bottle" };
@@ -113,9 +114,19 @@ namespace DayOfDream.Horror
 
         public void SetPaused(bool value)
         {
-            if (pausePanel != null) pausePanel.SetActive(value);
+            pauseMenu?.SetVisible(value);
             if (reticle != null) reticle.enabled = !value && !cinematic;
         }
+
+        internal void BindPauseMenu(FirstPersonExplorer player)
+        {
+            if (pauseMenu != null) return;
+            pausePanel.SetActive(false);
+            pauseMenu = new DreamPauseMenu(pausePanel, pausePanel.GetComponentInChildren<TMP_Text>(true),
+                () => player.SetPaused(false));
+        }
+
+        internal bool TryClosePauseSettings() => pauseMenu?.TryCloseSettings() == true;
 
         public void SetCamcorderRaised(bool raised)
         {
@@ -127,9 +138,9 @@ namespace DayOfDream.Horror
         public void ShowNote(string title, string body, float duration = 10)
         {
             noteText.text = title + "\n\n" + body;
-            notePanel.SetActive(true); noteUntil = Time.unscaledTime + duration;
+            notePanel.SetActive(true); noteUntil = Time.time + duration;
         }
         internal void DismissNote() { if (notePanel != null) notePanel.SetActive(false); }
-        private void Update() { if (notePanel != null && notePanel.activeSelf && Time.unscaledTime > noteUntil) notePanel.SetActive(false); }
+        private void Update() { if (notePanel != null && notePanel.activeSelf && Time.time > noteUntil) notePanel.SetActive(false); }
     }
 }

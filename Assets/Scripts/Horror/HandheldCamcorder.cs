@@ -29,7 +29,9 @@ namespace DayOfDream.Horror
         private int eyeCullingMask;
         private bool eyeShadows, eyePostProcessing, eyeCovered;
         private Camera lens;
+        private UniversalAdditionalCameraData lensData;
         private RenderTexture feed;
+        private RenderTexture previewFeed, viewfinderFeed;
         private Renderer lcd;
         private Mesh lcdMesh;
         private MaterialPropertyBlock lcdProperties;
@@ -91,11 +93,8 @@ namespace DayOfDream.Horror
             lens.farClipPlane = Mathf.Min(eye.farClipPlane, 110);
             lens.allowMSAA = false;
             lens.allowDynamicResolution = false;
-            var lensData = lens.GetUniversalAdditionalCameraData();
-            lensData.renderPostProcessing = true;
-            lensData.antialiasing = Application.isMobilePlatform
-                ? AntialiasingMode.FastApproximateAntialiasing
-                : AntialiasingMode.SubpixelMorphologicalAntiAliasing;
+            lens.useOcclusionCulling = eye.useOcclusionCulling;
+            lensData = lens.GetUniversalAdditionalCameraData();
             lensData.antialiasingQuality = AntialiasingQuality.High;
             cameraObject.GetComponent<CamcorderSensorCamera>().Owner = this;
         }
@@ -134,19 +133,29 @@ namespace DayOfDream.Horror
             float aspect = Mathf.Clamp(eye.pixelWidth / (float)Mathf.Max(1, eye.pixelHeight), .5f, 4f);
             fullSizeFeed = IsRaised || (fullSizeFeed && raisedAmount > .12f);
             int height = Application.isMobilePlatform
-                ? (fullSizeFeed ? Mathf.Clamp(eye.pixelHeight, 360, 600) : 180)
+                ? (fullSizeFeed ? Mathf.Clamp(eye.pixelHeight, 360, 480) : 144)
                 : (fullSizeFeed ? Mathf.Clamp(eye.pixelHeight, 540, 900) : 270);
             int width = Mathf.RoundToInt(height * aspect);
-            if (feed != null && feed.width == width && feed.height == height) return;
-            if (feed != null) Destroy(feed);
-            feed = new RenderTexture(width, height, 24, RenderTextureFormat.ARGB32)
+            ref RenderTexture selectedFeed = ref (fullSizeFeed ? ref viewfinderFeed : ref previewFeed);
+            if (selectedFeed == null || selectedFeed.width != width || selectedFeed.height != height)
             {
-                name = "DV Live Feed",
-                filterMode = FilterMode.Bilinear,
-                wrapMode = TextureWrapMode.Clamp
-            };
+                if (selectedFeed != null) Destroy(selectedFeed);
+                selectedFeed = new RenderTexture(width, height, 24, RenderTextureFormat.ARGB32)
+                {
+                    name = fullSizeFeed ? "DV Viewfinder Feed" : "DV LCD Preview",
+                    filterMode = FilterMode.Bilinear,
+                    wrapMode = TextureWrapMode.Clamp
+                };
+            }
+            if (feed == selectedFeed) return;
+            feed = selectedFeed;
             lens.targetTexture = feed;
             lens.aspect = width / (float)height;
+            lensData.renderPostProcessing = fullSizeFeed;
+            lensData.antialiasing = !fullSizeFeed ? AntialiasingMode.None : Application.isMobilePlatform
+                ? AntialiasingMode.FastApproximateAntialiasing
+                : AntialiasingMode.SubpixelMorphologicalAntiAliasing;
+            nextPreviewFrame = 0;
             viewfinder.SetFeed(feed);
             if (lcd != null)
             {
@@ -302,10 +311,12 @@ namespace DayOfDream.Horror
         {
             if (lens == null) return;
             CoverEye(IsCarried && !stowedForCinematic && EffectWeight >= .9999f);
-            // The small carry LCD doesn't need a second world render on every display frame.
+            // 手持时的小屏预览用低频刷新，并跳过额外的阴影渲染。
             float now = Time.unscaledTime;
             lens.enabled = IsCarried && !stowedForCinematic && feed != null && (raisedAmount > .08f || now >= nextPreviewFrame);
-            if (lens.enabled) nextPreviewFrame = now + 1f / (Application.isMobilePlatform ? 10 : 18);
+            if (!lens.enabled) return;
+            lensData.renderShadows = fullSizeFeed;
+            nextPreviewFrame = now + 1f / (Application.isMobilePlatform ? 10 : 18);
         }
 
         private void CoverEye(bool covered)
@@ -355,7 +366,8 @@ namespace DayOfDream.Horror
         {
             if (lens != null) Destroy(lens.gameObject);
             if (lcd != null) Destroy(lcd.gameObject);
-            if (feed != null) Destroy(feed);
+            if (previewFeed != null) Destroy(previewFeed);
+            if (viewfinderFeed != null) Destroy(viewfinderFeed);
             if (lcdMesh != null) Destroy(lcdMesh);
         }
 

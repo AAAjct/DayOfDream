@@ -3,28 +3,32 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.UI;
 using UnityEngine.Rendering.Universal;
 
 namespace DayOfDream.Horror
 {
     public sealed class DreamMainMenu : MonoBehaviour
     {
+        internal const string SceneName = "MainMenu";
+
         [SerializeField] private Button startButton, continueButton, settingsButton, quitButton, backButton;
         [SerializeField] private GameObject settingsPanel;
         [SerializeField] private Slider volumeSlider, sensitivitySlider;
+        [SerializeField] private Button frameRateButton, vSyncButton;
 
         private void Awake()
         {
             Time.timeScale = 1;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            AudioListener.volume = PlayerPrefs.GetFloat("Dream.Volume", .8f);
+            AudioListener.volume = DreamSettings.Volume;
             if (Camera.main is { } camera)
             {
                 var cameraData = camera.GetUniversalAdditionalCameraData();
                 cameraData.renderPostProcessing = true;
-                cameraData.antialiasing = AntialiasingMode.SubpixelMorphologicalAntiAliasing;
+                cameraData.antialiasing = Application.isMobilePlatform
+                    ? AntialiasingMode.FastApproximateAntialiasing
+                    : AntialiasingMode.SubpixelMorphologicalAntiAliasing;
             }
             startButton.onClick.AddListener(StartGame);
             continueButton.onClick.AddListener(ContinueGame);
@@ -32,10 +36,7 @@ namespace DayOfDream.Horror
             settingsButton.onClick.AddListener(() => ShowSettings(true));
             backButton.onClick.AddListener(() => ShowSettings(false));
             quitButton.onClick.AddListener(Quit);
-            volumeSlider.SetValueWithoutNotify(AudioListener.volume);
-            sensitivitySlider.SetValueWithoutNotify(PlayerPrefs.GetFloat("Dream.Sensitivity", 1));
-            volumeSlider.onValueChanged.AddListener(value => { AudioListener.volume = value; PlayerPrefs.SetFloat("Dream.Volume", value); });
-            sensitivitySlider.onValueChanged.AddListener(value => PlayerPrefs.SetFloat("Dream.Sensitivity", value));
+            new DreamSettings(volumeSlider, sensitivitySlider, frameRateButton, vSyncButton);
             settingsPanel.SetActive(false);
         }
 
@@ -43,13 +44,6 @@ namespace DayOfDream.Horror
         {
             if (settingsPanel.activeSelf && Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
                 ShowSettings(false);
-
-            var events = EventSystem.current;
-            if (events == null || events.currentSelectedGameObject != null) return;
-            if (events.currentInputModule is InputSystemUIInputModule input &&
-                input.move?.action is { } move && move.WasPerformedThisFrame() &&
-                move.ReadValue<Vector2>().sqrMagnitude > .25f)
-                events.SetSelectedGameObject((settingsPanel.activeSelf ? backButton : startButton).gameObject);
         }
 
         public void StartGame() { DreamProgress.NewGame(); SceneManager.LoadScene("AnonHouse"); }

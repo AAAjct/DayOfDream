@@ -21,12 +21,16 @@ namespace DayOfDream.Horror
         private WardrobeDoors wardrobeDoors;
         private float wardrobeTime;
         private bool leavingWardrobe;
+        private bool hidingExposed;
+        private float extractionDoorStart;
         private int day = 1;
         private HouseObject cabinetKey, exitKey, fuse, bottle;
         private bool powered, ended;
         private float grace = 8, blackout, nextNoise, feedbackUntil;
         public bool BlocksMovement => hiding != null || IsExecuting || player.IsWaking || blackout > 0 || ended;
         internal bool Hidden => hiding != null;
+        internal HouseObject ExposedHidingSpot => hidingExposed ? hiding : null;
+        internal bool IsReadyForExtraction => wardrobeDoors == null || wardrobeTime >= .59f;
         internal bool IsUnderBed => hiding != null && hiding.Type == HouseObject.Kind.HideUnderBed;
         internal bool HasCabinetKey => cabinetKey != null;
         internal bool HasExitKey => exitKey != null;
@@ -142,12 +146,28 @@ namespace DayOfDream.Horror
 
         internal void BeginExecution()
         {
+            StartExecution(false);
+        }
+
+        internal void StartExecution(bool extracting)
+        {
             IsExecuting = true;
+            extractionDoorStart = wardrobeDoors != null ? wardrobeDoors.Opening : 0f;
             feedback.text = "";
             feedbackUntil = 0;
             hud.SetPrompt("");
             hud.DismissNote();
-            player.PrepareForExecution();
+            player.PrepareForExecution(extracting);
+        }
+
+        internal void FrameExtraction(Vector3 attacker, float time, float duration)
+        {
+            if (wardrobeDoors != null)
+            {
+                float opening = Mathf.SmoothStep(0, 1, Mathf.InverseLerp(.16f, .59f, time));
+                wardrobeDoors.SetOpening(Mathf.Lerp(extractionDoorStart, 94f, opening));
+            }
+            player.FrameExtraction(attacker, hiding, time, duration);
         }
 
         internal void FinishExecution()
@@ -158,6 +178,10 @@ namespace DayOfDream.Horror
             Drop(ref exitKey, new Vector3(.22f, 0, .06f));
             Drop(ref fuse, new Vector3(0, 0, -.23f));
             Drop(ref bottle, new Vector3(0, 0, .25f));
+            wardrobeDoors?.SetOpening(0);
+            wardrobeDoors = null;
+            hiding = null;
+            hidingExposed = false;
             IsExecuting = false;
             if (day == 5)
             {
@@ -187,7 +211,7 @@ namespace DayOfDream.Horror
                 SceneManager.LoadScene(gameObject.scene.buildIndex);
                 return;
             }
-            if (hiding == null) return;
+            if (hiding == null || IsExecuting) return;
             if (wardrobeDoors != null)
             {
                 leavingWardrobe = true;
@@ -198,13 +222,14 @@ namespace DayOfDream.Horror
             }
             var leave = hiding.Outside;
             hiding = null;
+            hidingExposed = false;
             player.Warp(leave.position, leave.rotation);
             hud.SetPrompt("");
         }
 
         internal bool AdvanceWardrobeMove(float deltaTime)
         {
-            if (wardrobeDoors == null || wardrobeTime >= .59f) return false;
+            if (IsExecuting || wardrobeDoors == null || wardrobeTime >= .59f) return false;
             wardrobeTime = Mathf.Min(.59f, wardrobeTime + deltaTime);
             float opening = Mathf.SmoothStep(0, 1, Mathf.InverseLerp(0, .22f, wardrobeTime));
             float closing = Mathf.SmoothStep(0, 1, Mathf.InverseLerp(.34f, .59f, wardrobeTime));
@@ -217,6 +242,7 @@ namespace DayOfDream.Horror
             if (leavingWardrobe)
             {
                 hiding = null;
+                hidingExposed = false;
                 wardrobeDoors = null;
             }
             else hud.SetPrompt("", true);
@@ -263,11 +289,7 @@ namespace DayOfDream.Horror
                     break;
                 case HouseObject.Kind.Hide:
                 case HouseObject.Kind.HideUnderBed:
-                    if (hunter.CanSeePlayer && CanHunt)
-                    {
-                        Say("已被发现");
-                        break;
-                    }
+                    hidingExposed = CanHunt && hunter.NoticesHiding(target.Outside.position);
                     hiding = target;
                     if (target.Type == HouseObject.Kind.HideUnderBed)
                     {

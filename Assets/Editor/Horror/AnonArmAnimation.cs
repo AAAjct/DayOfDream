@@ -20,7 +20,7 @@ namespace DayOfDream.Editor
             clone.hideFlags = HideFlags.HideAndDontSave;
             try
             {
-                var clips = new AnimationClip[4];
+                var clips = new AnimationClip[6];
                 int index = 0;
                 foreach (string name in new[] { "Idle", "Walk", "Run", "Attack" })
                 {
@@ -37,6 +37,7 @@ namespace DayOfDream.Editor
                     else { EditorUtility.CopySerialized(generated, clip); Object.DestroyImmediate(generated); }
                     clips[index++] = clip;
                 }
+                BakeExtractions(clone.transform, clips);
                 // Legacy Animation serializes renamed AddClip states as scene-local copies.
                 var serialized = new SerializedObject(motion);
                 var list = serialized.FindProperty("m_Animations");
@@ -46,6 +47,54 @@ namespace DayOfDream.Editor
                 serialized.ApplyModifiedPropertiesWithoutUndo();
             }
             finally { Object.DestroyImmediate(clone); }
+        }
+
+        internal static void InstallExtractions(GameObject hunter, Animation motion)
+        {
+            var clone = Object.Instantiate(hunter);
+            clone.hideFlags = HideFlags.HideAndDontSave;
+            try
+            {
+                var clips = new AnimationClip[6];
+                clips[3] = AssetDatabase.LoadAssetAtPath<AnimationClip>(Folder + "ClubAttack.anim");
+                BakeExtractions(clone.transform, clips);
+                var serialized = new SerializedObject(motion);
+                var list = serialized.FindProperty("m_Animations");
+                foreach (var clip in clips.Skip(4))
+                {
+                    if (Enumerable.Range(0, list.arraySize).Any(i => list.GetArrayElementAtIndex(i).objectReferenceValue == clip))
+                        continue;
+                    int index = list.arraySize++;
+                    list.GetArrayElementAtIndex(index).objectReferenceValue = clip;
+                }
+                serialized.ApplyModifiedProperties();
+            }
+            finally { Object.DestroyImmediate(clone); }
+        }
+
+        private static void BakeExtractions(Transform root, AnimationClip[] clips)
+        {
+            var idle = AssetDatabase.LoadAssetAtPath<AnimationClip>(Folder + "HunterIdle.anim");
+            for (int i = 4; i < 6; i++)
+            {
+                bool bed = i == 4;
+                var clip = new AnimationClip
+                {
+                    name = bed ? "BedExtraction" : "WardrobeExtraction",
+                    legacy = true, frameRate = 24, wrapMode = WrapMode.ClampForever
+                };
+                BakeArms(root, idle, clip, clip.name, clips[3], bed ? 1.38f : 1.48f);
+                string path = Folder + clip.name + ".anim";
+                var existing = AssetDatabase.LoadAssetAtPath<AnimationClip>(path);
+                if (existing == null) AssetDatabase.CreateAsset(clip, path);
+                else
+                {
+                    EditorUtility.CopySerialized(clip, existing);
+                    Object.DestroyImmediate(clip);
+                    clip = existing;
+                }
+                clips[i] = clip;
+            }
         }
 
         internal static AnimationClip MenuIdle(GameObject model)
@@ -75,7 +124,8 @@ namespace DayOfDream.Editor
             return clip;
         }
 
-        private static void BakeArms(Transform root, AnimationClip source, AnimationClip clip, string state)
+        private static void BakeArms(Transform root, AnimationClip source, AnimationClip clip, string state,
+            AnimationClip strikeClip = null, float extraction = 0)
         {
             bool menu = state == "MenuIdle";
             var left = Arm(root.Find(Chest + "__/__"));
@@ -85,18 +135,23 @@ namespace DayOfDream.Editor
                 .Where(t => t != right[2] && t.name != "Wooden Club").ToArray();
             var bones = new[] { left[0], left[1], left[2], right[0], right[1], right[2] }
                 .Concat(leftFingers).Concat(rightFingers).ToArray();
-            if (state == "Attack") bones = bones.Concat(root.GetComponentInChildren<SkinnedMeshRenderer>().bones).Distinct().ToArray();
+            if (state == "Attack" || strikeClip != null)
+                bones = bones.Concat(root.GetComponentInChildren<SkinnedMeshRenderer>().bones).Distinct().ToArray();
+            var hips = root.Find(Hips);
+            var chest = root.Find(Chest.TrimEnd('/'));
+            var hipsPosition = new[] { new AnimationCurve(), new AnimationCurve(), new AnimationCurve() };
             var curves = new AnimationCurve[bones.Length, 4];
             for (int i = 0; i < bones.Length; i++)
                 for (int axis = 0; axis < 4; axis++) curves[i, axis] = new AnimationCurve();
             var previous = new Quaternion[bones.Length];
-            float length = state == "Attack" ? 2.65f : source.length;
-            int frames = Mathf.CeilToInt(length * Rate);
+            float length = strikeClip != null ? extraction :
+                state == "Attack" ? 2.65f : source.length;
+            int frames = Mathf.CeilToInt(length * clip.frameRate);
             for (int frame = 0; frame <= frames; frame++)
             {
                 float phase = (float)frame / frames;
                 float time = phase * length;
-                source.SampleAnimation(root.gameObject, state == "Attack" ? 0 : time);
+                source.SampleAnimation(root.gameObject, state == "Attack" || strikeClip != null ? 0 : time);
                 float swing = state == "Idle" ? Mathf.Sin(phase * 2 * Mathf.PI) * .018f :
                     Mathf.Sin(phase * 2 * Mathf.PI) * (state == "Run" ? .19f : .115f);
                 Vector3 leftTarget = new(-.245f, .94f, .06f - swing);
@@ -112,7 +167,13 @@ namespace DayOfDream.Editor
                     club = Vector3.Slerp(new(0, .32f, 1), new(0, .90f, -.44f), raise);
                     club = Vector3.Slerp(club, new(0, -.76f, .65f), strike);
                 }
-                if (menu)
+                if (strikeClip != null)
+                {
+                    if (time >= extraction) strikeClip.SampleAnimation(root.gameObject, time - extraction);
+                    else PoseExtraction(root, hips, chest, left, right, state == "BedExtraction", time, extraction, strikeClip);
+                    for (int axis = 0; axis < 3; axis++) hipsPosition[axis].AddKey(time, hips.localPosition[axis]);
+                }
+                else if (menu)
                 {
                     HangArm(root, left, -1);
                     HangArm(root, right, 1);
@@ -135,8 +196,11 @@ namespace DayOfDream.Editor
                     Pose(root, left, leftTarget, new(-1, -.16f, -.55f));
                     if (state == "Attack") left[2].rotation = leftGrip;
                 }
-                Curl(right[2], !menu, 1);
-                Curl(left[2], state == "Attack", -1);
+                if (strikeClip == null)
+                {
+                    Curl(right[2], !menu, 1);
+                    Curl(left[2], state == "Attack", -1);
+                }
                 for (int i = 0; i < bones.Length; i++)
                 {
                     var q = bones[i].localRotation;
@@ -156,7 +220,47 @@ namespace DayOfDream.Editor
                     values[i * 4 + axis] = curves[i, axis];
                 }
             AnimationUtility.SetEditorCurves(clip, bindings, values);
+            if (strikeClip != null)
+            {
+                for (int axis = 0; axis < 3; axis++)
+                    clip.SetCurve(Hips, typeof(Transform), "m_LocalPosition." + "xyz"[axis], hipsPosition[axis]);
+            }
             clip.EnsureQuaternionContinuity();
+        }
+
+        private static void PoseExtraction(Transform root, Transform hips, Transform chest, Transform[] left,
+            Transform[] right, bool bed, float time, float duration, AnimationClip strike)
+        {
+            strike.SampleAnimation(root.gameObject, 0);
+            float bend = Smooth(time, .02f, bed ? .48f : .33f) * (1 - Smooth(time, bed ? .88f : 1.06f, duration));
+            float yank = Smooth(time, bed ? .54f : .74f, bed ? .95f : 1.14f);
+            float reach = Smooth(time, .05f, bed ? .48f : .28f) * (1 - Smooth(time, duration - .30f, duration));
+            var strikeLeft = root.InverseTransformPoint(left[2].position);
+            var strikeRight = root.InverseTransformPoint(right[2].position);
+            var leftRotation = left[2].rotation;
+            var rightRotation = right[2].rotation;
+            // Fold down to the bed frame. At the wardrobe, reach for the handle before switching to the player.
+            chest.rotation = Quaternion.AngleAxis((bed ? 57f : 19f) * bend, root.right) * chest.rotation;
+            if (bed)
+            {
+                // Bend at the waist with planted feet.
+                hips.rotation = Quaternion.AngleAxis(18f * bend, root.right) * hips.rotation;
+            }
+            Vector3 grab = bed ? new(-.10f, .34f, .65f) : new(-.18f, 1.19f, .66f);
+            if (!bed)
+            {
+                float door = Smooth(time, .20f, .57f);
+                grab = Vector3.Lerp(grab, new(-.43f, 1.17f, .28f), door);
+                grab = Vector3.Lerp(grab, new(-.11f, 1.31f, .67f), Smooth(time, .52f, .74f));
+            }
+            grab = Vector3.Lerp(grab, new(-.16f, bed ? .72f : 1.02f, .26f), yank);
+            Pose(root, left, Vector3.Lerp(strikeLeft, grab, reach), new(-1, -.2f, -.35f));
+            Pose(root, right, Vector3.Lerp(strikeRight, new Vector3(.32f, bed ? .78f : .97f, -.04f), reach),
+                new(1, -.14f, -.45f));
+            left[2].rotation = Quaternion.Slerp(leftRotation, root.rotation * Quaternion.Euler(18, -35, -30), reach);
+            right[2].rotation = Quaternion.Slerp(rightRotation, root.rotation * Quaternion.Euler(-36, 18, 0), reach);
+            Curl(left[2], time >= (bed ? .48f : .21f), -1);
+            Curl(right[2], true, 1);
         }
 
         private static void Curl(Transform wrist, bool gripping, float mirror)

@@ -46,11 +46,5 @@ namespace DayOfDream.Horror
         internal void Throw() { if (toss != null) effects.PlayOneShot(toss, .6f); }
         internal void Execute() { steps.Stop(); if (execution.clip != null) execution.Play(); }
         internal void StopExecution() { if (execution != null) execution.Stop(); }
-        internal void Pause(bool paused)
-        {
-            if (steps == null) return;
-            if (paused) { steps.Pause(); effects.Pause(); execution.Pause(); }
-            else { steps.UnPause(); effects.UnPause(); execution.UnPause(); }
-        }
     }
 }

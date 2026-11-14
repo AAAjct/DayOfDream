@@ -47,10 +47,6 @@ namespace DayOfDream.Editor
             var house = EditorSceneManager.OpenScene(AnonHouseBuilder.Path);
             InstallArchitecture();
             RepairAnon();
-            HouseSign("Kitchen", "厨房", new(1.26f,2.05f,4.95f),90);
-            HouseSign("Study", "书房", new(-1.26f,2.05f,-4.95f),-90);
-            HouseSign("Cellar", "地窖", new(6.82f,2.5f,.87f),90);
-            HouseSign("Front door", "正门", new(0,2.52f,6.71f),0);
             EditorSceneManager.SaveScene(house);
             var school = EditorSceneManager.OpenScene(HorrorSchoolBuilder.ScenePath);
             foreach (var label in Object.FindObjectsByType<TextMeshPro>(FindObjectsInactive.Include)
@@ -80,6 +76,11 @@ namespace DayOfDream.Editor
             {
                 renderer.sharedMaterials = renderer.sharedMaterials.Select(material =>
                     AssetDatabase.LoadAssetAtPath<Material>(Art + material.name + ".mat") ?? material).ToArray();
+                // 墙体和楼板挡住视线，普通装饰只参与被遮挡剔除。
+                var flags = GameObjectUtility.GetStaticEditorFlags(renderer.gameObject) | StaticEditorFlags.OccludeeStatic;
+                if (renderer.name.StartsWith("Occluder ", StringComparison.Ordinal))
+                    flags |= StaticEditorFlags.OccluderStatic;
+                GameObjectUtility.SetStaticEditorFlags(renderer.gameObject, flags);
             }
             // The authored collision shell remains the source for the baked NavMesh.
             foreach (string group in new[] { "House Structure", "House Finishing", "House Expansion Structure" })
@@ -89,6 +90,36 @@ namespace DayOfDream.Editor
                 foreach (var renderer in root.GetComponentsInChildren<MeshRenderer>())
                     renderer.enabled = false;
             }
+
+            if (GameObject.Find("House Expansion Furnishings") is { } furnishings)
+                OptimizeFurnishings(furnishings);
+        }
+
+        private static void OptimizeFurnishings(GameObject furnishings)
+        {
+            // 固定家具参与剔除和静态合批。开合门保留动态渲染，由门板负责投影。
+            var staticProps = new[] { "Bookcase", "Exterior Facade", "Braced wooden crate", "Recessed window" };
+            foreach (var item in furnishings.transform.Cast<Transform>().Where(t => staticProps.Contains(t.name)))
+            foreach (var renderer in item.GetComponentsInChildren<MeshRenderer>())
+            {
+                if (!renderer.enabled || renderer.GetComponentInParent<Rigidbody>() != null) continue;
+                var flags = GameObjectUtility.GetStaticEditorFlags(renderer.gameObject);
+                GameObjectUtility.SetStaticEditorFlags(renderer.gameObject,
+                    flags | StaticEditorFlags.OccludeeStatic | StaticEditorFlags.BatchingStatic);
+                if (renderer.name is "Bound volume" or "Window mullion")
+                    renderer.shadowCastingMode = ShadowCastingMode.Off;
+            }
+
+            foreach (var door in furnishings.GetComponentsInChildren<Horror.HingedDoor>())
+            foreach (var renderer in door.GetComponentsInChildren<MeshRenderer>())
+            {
+                if (renderer.name is "Door inset panel" or "Panel side moulding" or "Latch plate" or "Lever handle")
+                    renderer.shadowCastingMode = ShadowCastingMode.Off;
+            }
+
+            // 建筑点光只负责补光。主光和局部重点灯光负责投影。
+            foreach (var lamp in furnishings.GetComponentsInChildren<Light>())
+                if (lamp.name == "Architectural lamp") lamp.shadows = LightShadows.None;
         }
 
         private static void RepairAnon()
@@ -148,17 +179,6 @@ namespace DayOfDream.Editor
                 }
                 EditorUtility.SetDirty(mat);
             }
-        }
-
-        private static void HouseSign(string name, string text, Vector3 position, float yaw)
-        {
-            var obj = GameObject.Find(name + " sign") ?? new GameObject(name + " sign",typeof(TextMeshPro));
-            obj.transform.SetPositionAndRotation(position,Quaternion.Euler(0,yaw,0));
-            var label = obj.GetComponent<TextMeshPro>();
-            label.font = AssetDatabase.LoadAssetAtPath<TMP_FontAsset>("Assets/Art/UI/Fonts/SchoolChinese SDF.asset");
-            label.text = text;
-            label.rectTransform.sizeDelta = new Vector2(1.25f,.45f);
-            StyleSign(label);
         }
 
         internal static void StyleSign(TextMeshPro label)
